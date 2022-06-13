@@ -2,6 +2,7 @@
 <html>
     <head>
     <link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
         <title>TeDucate Primary</title>
         <!-- Styles -->
         <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css')}}">
@@ -31,7 +32,15 @@
                 background-image:
                 url('https://i.pinimg.com/originals/f7/1a/af/f71aaf6925ab5b8700f9b959cd1e2a23.jpg');
                 background-size: 100%;
-                margin-top: 50px;
+                margin-top: 100px;
+            }
+
+            #section4 {
+                height: 1000px;
+                background-image:
+                url('https://media.istockphoto.com/photos/abstract-geometric-background-picture-id1163528314?k=20&m=1163528314&s=612x612&w=0&h=G_ZZtId9VNT0f9US5PP9UUfH21OIGBFw5do151LJB3s=');
+                background-size: 100%;
+                margin-top: 40px;
             }
         </style>
         <style>
@@ -70,6 +79,7 @@
                 color: black;
                 text-shadow: 2px 2px 4px grey;
                 font-family: Lucida Handwriting;
+                margin-top: 10px;
             }
 
             .main h3 {
@@ -78,9 +88,44 @@
                 position: relative;
                 left: -550px;
                 top: 450px;
+                margin-top: 2px;
+            }
+            
+            .main h4 {
+                font-size: 60px;
+                font-family: 'Architects Daughter';
+                position: relative;
+                left: -450px;
+                top: 40px;
+                margin-top: 2px;
             }
 
-            .content a{
+            .main h5 {
+                font-size: 20px;
+                text-align: left;
+                left: 60px;
+                right: -100px;
+                position: relative;
+            }
+
+            .main h6 {
+                font-size: 15px;
+                text-align: left;
+                left: 60px;
+                right: -100px;
+                position: relative;
+                line-height: 1.6
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+            
+            .content a {
+
+            }
+            .dropbtn {
                 text-decoration: none;
                 display: inline-block;
                 color: white;
@@ -91,6 +136,28 @@
                 margin-top: 10px;
                 background-image: linear-gradient(to right, silver , grey);
             }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+            .dropdown-content a:hover {background-color: #ddd;}
+
+            .dropdown:hover .dropdown-content {display: block;}
+
+            .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
             .menu {
                 font-size: 15px;
@@ -173,7 +240,8 @@
                 padding: 16px 32px;
             }
         </style>
-    </head>    
+    </head>
+
     <body class="antialiased">
         <div class="menu">
             @if (Route::has('login'))
@@ -201,40 +269,59 @@
             </video>
             <h1>-TeDucate Primary-</h1>
             <h2>A platform that embeds the <a href="/curriculum">Computing Curriculum</a> into primary school education.</h2>
-            <div class="content">
-                <a href="#section3">Explore</a>
+            <div class="dropdown">
+                <button class="dropbtn">Explore</button>
+                    <div class="dropdown-content">
+                        <a href="#section3">Our Mission</a>
+                        <a href="#section4">Why TeDucate?</a>
+                        <a href="#section5">Getting Started</a>
+                    </div>
+            </div>
         </div>
 
         <div class="main" id="section3">
-            <h3>-Our Mission-</h3>
+            <h3 class="font-effect-shadow-multiple">-Our Mission-</h3>
+            <>
 
             <div class="container">
                 <img src="https://media.getwalkabouts.com/media/tcppel1f/1teacher-benefits-using-technology-in-the-classroom.jpg?anchor=center&mode=crop&width=360&height=220&rnd=132052452031630000" alt="ipads" class="image" style="width:50%">
                 <div class="middle">
-                    <div class="text">Train Primary School Teachers on Technical Skills</div>
+                    <div class="text">To Provide Technical Training Resources For Primary School Teachers</div>
                 </div>
             </div>
 
             <div class="container" id="img1">
                 <img src="https://elementaryuk.com/wp-content/uploads/2019/07/ipads-QR-code.jpg" alt="ipads" class="image" style="width:50%">
                 <div class="middle">
-                    <div class="text">Equip Primary School Students with Technology</div>
+                    <div class="text">To Increase Teacher Confidence In Using Techology Within The Classroom</div>
                 </div>
             </div>
 
             <div class="container" id="img2">
                 <img src="https://graemeptann.files.wordpress.com/2015/05/technology-for-primary-schools.jpg" alt="ipads" class="image" style="width:50%">
                 <div class="middle">
-                    <div class="text">Multimedia Exposure</div>
+                    <div class="text">To Increase Multimedia Exposure Within The Classroom</div>
                 </div>
             </div>
 
             <div class="container" id="img3">
                 <img src="https://s7280.pcdn.co/wp-content/uploads/2020/03/customer_feedback_agile_mainframe_approach-_1400x700-810x405.jpg.optimal.jpg" alt="ipads" class="image" style="width:50%">
                 <div class="middle">
-                    <div class="text">Build a platform designed for YOU!</div>
+                    <div class="text">To Build A Computing Curriculum Resources Platform Designed For YOU!</div>
                 </div>
             </div>
+        
+        <div class="main" id="section4">
+            <h4 class="font-effect-shadow-multiple">-Why TeDucate?-</h4>
+            <h5>Let's work together to make educational technology work for you!</h5>
+            <h6>Let's face it, technology has transformed the way we do almost everything in our day to day lives, 
+                including how we teach. The amount of technical resources that educators have access to could <br>
+                have a signifant impact in improving the classroom experience. Here at TeDucate Primary, our aim is to 
+                harness the resources that are already available to teachers in most primary schools and <br>
+                provide personalised training on how to use these tools to implement the Computing Curriculum.
+            </h6>
+            <h5>The Personalised Training Platform</h5>
+            <h6>How is TeDucate Primary different from all the other teaching recourses sites? 
 
     </body>
 </html>
