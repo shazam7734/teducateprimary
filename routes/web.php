@@ -29,5 +29,9 @@ Route::get('/about', function () {
     return view('about');
 });
 
+Route::get('/survey', function () {
+    return view('survey');
+});
+
 Route::view('form','userview');
 Route::post('submit','Companies@save');
