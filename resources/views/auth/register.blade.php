@@ -1,3 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Login</title>
+
+<!-- Styles -->
+<style>
+    body {
+    background-image: url('https://i.pinimg.com/originals/85/6f/31/856f31d9f475501c7552c97dbe727319.jpg');
+    }
+</style>
+</head>
+
+<body>
 @extends('layouts.app')
 
 @section('content')
@@ -75,3 +90,5 @@
     </div>
 </div>
 @endsection
+</body>
+</html>
