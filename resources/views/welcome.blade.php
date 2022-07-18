@@ -49,6 +49,7 @@
 
         <div class="main" id="section3">
             <h3 class="font-effect-shadow-multiple">-Our Mission-</h3>
+            <h3 class="mission">Hover Over The Pictures To Learn More!</h3>
             
 
             <div class="container">
@@ -91,18 +92,19 @@
             <h5>How is TeDucate Primary different?</h5>
             <h6> The Personalised Training Platform </h6>
             <p> At TeDucate, you will be able create your very own personalised training platform within your unique profile page.
-                By taking a 1 minute survey in which you simply rank the <a href="/curriculum">Computing Curriculum</a> teaching points according
-                to how well you think you know them, the system will automatically generate a complete program full of introductory lessons designed for you,
-                lesson plans designed for your students, and interactive apps and games which further stimulate your students knowledge of the computing 
-                curriculum. The lesson plans are categorised by year group, so you will have access to all the lesson plans should you ever move 
+                Once you create an account and log in, you can take the 1 minute survey in which you simply rank the <a href="/curriculum">Computing Curriculum</a> 
+                teaching points according to how well you think you know them. The system will then automatically generate a complete program full of introductory
+                lessons designed for you, lesson plans designed for your students, and interactive apps and games which further stimulate your students knowledge
+                of the computing curriculum. The lesson plans are categorised by year group, so you will have access to all the lesson plans should you ever move 
                 to a different year group! </p>
             <h6>The TeDucation Community </h6>
-            <p>It is important here at TeDucate that we constantly take you, our fellow TeDucator's, feedback to improve and provide for you the resources you 
+            <p>It is important here at TeDucate that we constantly take your, our fellow TeDucator, feedback to improve and provide for you the resources you 
                 need to succeed. The TeDucation Community page is a prime example of how we included a feature based on direct feedback from our users! 
                 Within this page, you can post, comment, share and like posts made by your fellow TeDucators on lesson plans they've done, dusted and shared
                 with the TeDucation Community. You can see prime examples of how other teachers have done a computing lesson, with examples of students work
                 and any other tips and tricks they've shared. Feel free to post a blog of your own each time you complete a computing lesson! The more likes you 
-                get, the more prizes you win!</p>
+                get, the more prizes you win! 
+            <h6>Hover over the pictures to discover how it works!</h6>
             
             <div class="container" id="img4">
                 <img src="https://media.istockphoto.com/photos/customer-satisfaction-survey-concept-businessman-using-computer-picture-id1312214761?b=1&k=20&m=1312214761&s=170667a&w=0&h=k5-8lZoIyHJGfcMAtSD0iahOD3EyDg0vOlvd4FTXsC8=" class="image" style="width:50%">

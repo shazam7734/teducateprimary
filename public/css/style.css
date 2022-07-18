@@ -222,14 +222,14 @@ html {
             position: relative;
             width: 45%;
             right: -60px;
-            top: 30px;
+            top: 0px;
         }
 
         #img5 {
             position: relative;
             width: 45%;
             right: -520px;
-            top: -200px;
+            top: -230px;
             height: 23%;
             overflow: hidden;
         }
@@ -238,7 +238,7 @@ html {
             position: relative;
             width: 53%;
             right: -970px;
-            top: -430px;              
+            top: -460px;              
         }
 
         #login {
@@ -294,7 +294,16 @@ html {
             text-align: center;
             font-family: sans-serif;
         }
+        h3.mission {
+            text-align: center;
+            font-family: sans-serif;
+            font-size: small;
 
+        }
+        table {
+            background-color: rgb(240, 240, 240);
+        }
+        
         table.striped-columns tbody td:nth-of-type(even),
         table.striped-columns th:nth-of-type(even){
             background: rgb(235, 227, 209);
