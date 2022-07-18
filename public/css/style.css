@@ -22,7 +22,7 @@ html {
         background-image:
         url('https://i.pinimg.com/originals/f7/1a/af/f71aaf6925ab5b8700f9b959cd1e2a23.jpg');
         background-size: 100%;
-        margin-top: 100px;
+        margin-top: 120px;
     }
 
     #section4 {
@@ -30,15 +30,16 @@ html {
         background-image:
         url('https://media.istockphoto.com/photos/abstract-geometric-background-picture-id1163528314?k=20&m=1163528314&s=612x612&w=0&h=G_ZZtId9VNT0f9US5PP9UUfH21OIGBFw5do151LJB3s=');
         background-size: 100%;
-        margin-top: 40px;
+        margin-top: -25px;
     }
 
     #section5 {
-        height: 800px;
+        height: 980px;
         background-image:
         url('https://t3.ftcdn.net/jpg/03/65/75/56/360_F_365755691_ylmF7k7q0wxMLIaeZdR7DcKBcKOf5Yot.jpg');
-        background-size: 100%;
-        margin-top: 40px;
+        background-size: 120%;
+        margin-top: 10px;
+        overflow: hidden;
     }
 
     body {
@@ -115,12 +116,21 @@ html {
             margin-right: 25px;
         }
 
+
         .main h7 {
             font-size: 60px;
             font-family: 'Architects Daughter';
             position: relative;
             top: 40px;
             margin-top: 2px;
+        }
+
+        .main h8 {
+            font-size: 15px;
+            text-align: left;
+            line-height: 1.5;
+            margin-top: 25px;
+            font-weight: bold;          
         }
 
         .main p {
@@ -239,6 +249,47 @@ html {
             width: 53%;
             right: -970px;
             top: -460px;              
+        }
+
+        #img7 {
+            position: relative;
+            right: -250px;
+            top: 30px;           
+        }
+
+        #img8 {
+            position: relative;
+            right: -310px;
+            top: -625px;
+            width: 11%;        
+        }
+
+        #img9 {
+            position: relative;
+            right: -400px;
+            top: -400px;
+            width: 16%;        
+        }
+
+        #img10 {
+            position: relative;
+            right: -685px;
+            top: -755px;
+            width: 14%;        
+        }
+
+        #img11 {
+            position: relative;
+            right: -1050px;
+            top: -580px;
+            width: 14%;        
+        }
+
+        #img12 {
+            position: relative;
+            right: -1035px;
+            top: -1155px;
+            width: 14%;         
         }
 
         #login {
