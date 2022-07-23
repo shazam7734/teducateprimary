@@ -132,18 +132,18 @@
             <h7 class="font-effect-shadow-multiple">-Getting Started-</h7> <br><br><br><br><be>
             <h8>Hover over the pictures to learn how in 5 easy steps!</h8>
             <div id="img7">
-                <img src="https://lh3.googleusercontent.com/Y-RSBfiWmqgMVEErvdVa7atiSGY_wV5JjEZzxTaBPLvw94q6IEUVpzJWs-HwnPOkJD4Tum6nE3hkrzk9YZvA7JobTodEz47hwbBIwxTZ-79Oh0cawDnwj8zV4RvvwrRa-sOE2qGeNWKx7i66o_R0iH4xdmcGrG5M6FnOUxxYqd3hQIIij8cGCwH0_kDfPCMp_l8YsWivXW1j2_3A4bAqjt0ZFvFOLmIVCZ9t3VRpwsq7C1Dwf-oTGWQRfHHiroHT_RYvuehdv3NwtFuE5uSyubc3dtJ7Mz_fMSpQ3gs91z-_uD1rXFGCLmoxkLjG0KewuMSAmGulhdxVIYsi3GFtIHCG1D7EIa_U8kx7oW2GWkKWSI0h0FHaab5Ef-_oxRGcB-Q43DQIgFbkjlY1Vieu36n7jtr_IfmBRNWx18XGgQY2yN_QIyaZ-zxzLhfgia7uX8EOMfd7CKtzL6Ldd31dA9dQeWPzpUA4VHqr-RdYvmjLo8viH7PVcMhliCo0HWdGQrRyevlSwdtbmdp-MmUAZ_Y9R4e6SS6I0lmLjOlhdQDUs2ZP_5iv95nr7LpmDMoTS7J1XsKCtLt3HDXVMNm8ed8PXHXvqllUuPLh8KEYDoqQjl_P6d5lecvpLv7_NZqNrjkbpp2jlHFyE9wA8SzTU_arCGFWAySRGFj7hMdmGrfqw6ArO5CajfxIy_4dwkFnKgnnjmirLpBcBtZKnMte4dQaOeo6tGNt0WFSXIZBYd_BnwsuywQmx1TeCoU0dwzOoUbx0nBqav3vleWlHuq_tY6dYYw1h-XACO2n=w1167-h812-no?authuser=0" class="image" style="width:70%">
+                <img src="https://i.ibb.co/3Yx1zNt/getting-started.png" class="image" style="width:70%">
             </div>
 
             <div class="container" id="img8">
-                <img src="https://lh3.googleusercontent.com/UZHBP5hilZmraETyCfl5Yo7n4DYPN7Uw-YbQkkSDvdNZ7D94zfqIQxr6btCNrVfg3Lwby6ofyvEOru3Xv4dr8NL3NTp46T0teA_FkJ8ebSRd3sXpYqyRgaE4zVRqIQ368EXCKI_DGhxXmoYcAOejOJk7Zx_E3ztZf8M4V-5oluaoY65vs9MVaHFLQ4TLzEg6OzOSWNOMokkXt2Bx11wgvT1LyrQWIwM9jsgIlgoIS_Vlfpsl3bwZfvIjB2PdY_Uc2APNxQxKuKLnqyits_0Q5kT0ZP9XbJPZ_f0q1qcwdqua4352Tzbdjb5DnVHJJrDcmBLVd7O8UUjLPE9fxVQcNlLKMLWxq551zFKSCpfLl9ICv1BIFOfRtQIibUdVSFJD5RwugQcHSL0TGu_BNUptSGstpzAhabJoccc9-hqUzNpaqFFekucjRSi_OAUSrxJr439l1QaOhuUAD82uEcUsaf5oZwEqleyrR_arJizIc_bf0E7x3ev8XJRIwnppGtHvKa5ZKMwLPv21I8LhcXIg-PSl-Wydifev4gFkyE55c0p06DnlfRgQNyKSreNNEQrNEAnEVZmVHvdDhCxp_0JSZfmBdx-O1pljmYnZqaaSFIy6qhtK88NFrHNjj3GN_QWeF1BpZ_G-IS3OUDzzrqBJgv77H4gJGbNzmqAWk6RYSP8tlhabrd1sCTxzC5NOT2jXLV1ED1curtiPUD8Hp8mmmyNSsaBvxiHwqLxBBsyrYgAWJ4W_VUooYTFnSzU5mxZTL0EWSM87l2bWAAMCa6w_-OUCFl2WcyqCrQDE=w291-h313-no?authuser=0" class="image">
+                <img src="https://i.ibb.co/c1pjvmd/login.png" class="image">
                 <div class="middle">
                     <div class="text">Step 1: <a href="http://127.0.0.1:8000/register">Register</a> <br> and <br> <a href="http://127.0.0.1:8000/login">Log in</a>!</div>
                 </div>
             </div>
 
             <div class="container" id="img9">
-                <img src="https://lh3.googleusercontent.com/EVp_oO7GJDtuUCWWdQnPdA6_vpSNCf23ofajxMeSieyQylsn3n7_eVVJZkHKxiQZf4-s8aUkmHJhAEU1gkVZJBIm2oYC_1knkb3K2MkYERcoNT5XGsXc9ihUZj8C7BcJ7oATl-rlL5frqwk4Y6pRbg9AMJlfyJswso_jK_Z5VRyEDN8jgZWp9EUzRy4X3opBkS-kUFXSlO83pAdOKe09qyxmeqgjJ98B0QqNM1u1wrryLjKa6UVycvA54A_vuhFL_ser27OV0MJA4yys5lPNM98JngBIOPjspkH-j9GueRUhSU131POz1fCLCUmD96WOIxuVBJffvuc1tkxrKcI1FQ0QPjlP2jZr47jT1qyBv35MV5xSBOacvPT5KaGwM3zsJo4a_oYVVMR2nos_ufa0KlbdEVO88plrD0ML2A3YaIYJ8b2CrFMEQESXSO3ImZs5MwL8mBO6NNEZYPKIOImHX5-Q9cqT_S32c8-qOrmK-J-E6zhsS6CbEMzgz-lTWOets1sUtFByGNuYeANk4VpPHhMqw0SPWZJVFUPbV5a8w5WcFlpzhFm13xP5ZL--8OuaYX4td5T9panOYT2X82iWg8IyE_-birSGkvbDZtKcPmDKFk0v3yb_m2N18ZVgqBhfyfevNchPp99SuLqnJTy9mSigdk_XnuC10bEbvqlz3BlIK4P9DZqs_8Q-3-s7zM9HpyyOdFkqjPKH2-gx2KggbauqKd9G7szmkO921PNoXOrBI-4w7Ug85MdEIuZ8Grni3yKylatYxkQdnaAvHhjhsyBKPn6IU954Qmp2=w958-h358-no?authuser=0" class="image">
+                <img src="https://i.ibb.co/mvJkwdR/survey.png" class="image">
                 <div class="middle">
                     <div class="text">Step 2: From your profile page, take the computing curriculum survey!</div>
                 </div>

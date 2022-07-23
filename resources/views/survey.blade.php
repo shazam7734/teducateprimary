@@ -19,17 +19,19 @@
             var safety = $('input:radio[name=safety]:checked').val();
             
             var goals = $('input:radio[name=goals]:checked').val();
-            var goals = $('input:radio[name=variables]:checked').val();
-            var goals = $('input:radio[name=reasoning]:checked').val();
-            var goals = $('input:radio[name=networks]:checked').val();
-            var goals = $('input:radio[name=search]:checked').val();
+            var variables = $('input:radio[name=variables]:checked').val();
+            var reasoning = $('input:radio[name=reasoning]:checked').val();
+            var networks = $('input:radio[name=networks]:checked').val();
+            var search = $('input:radio[name=search]:checked').val();
             var variety = $('input:radio[name=variety]:checked').val();
-            var goals = $('input:radio[name=responsible]:checked').val();
+            var responsible = $('input:radio[name=responsible]:checked').val();
             });
         </script>
     </head>
 
     <body>
+    <form action="/survey" onsubmit="return thank_you_function()" method="post">
+    @csrf
         <h1>Computing Curriculum Survey</h1>
         <h3>Please fill out the survey below for both Key Stage 1 and Key Stage 2. Rank each computing curriculum teaching point depending
             on how well you feel you know them. Click "Submit" when you're done to create your personalised training platform!
@@ -197,7 +199,13 @@
             </tr>
         </tbody>
         </table>
-        <button class="submitbtn"><a href="/home">Submit</a></button>
+        <button class="submitbtn">Submit</button>
+        </form>
     </body>
+    <script>
+    function thank_you_function(){
+        alert("Thank you for your feedback.");
+    }
+    </script>
 </html>
 

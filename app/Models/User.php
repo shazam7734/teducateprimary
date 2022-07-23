@@ -41,4 +41,10 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    //This function establishes the relationship each user has with the survey
+    //results in order to establish the connection between the survey and the user.
+    public function survey(){
+        return $this->hasOne(survey::class);
+    }
 }
