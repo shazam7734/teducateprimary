@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
+use App\Models\Survey;
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
 
 class SurveyController extends Controller
 {
@@ -24,4 +28,12 @@ class SurveyController extends Controller
       //Once the survey is submitted, the user will be redirected to their profile page
       return redirect('/home');
      }
+
+     //
+    public function index()
+    {
+        $surveys = DB::select('SELECT * FROM `surveys` WHERE user_id=?;');
+        return view('home')->with("results", $surveys);
+    }
+    
 }

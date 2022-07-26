@@ -34,12 +34,12 @@
     @csrf
         <h1>Computing Curriculum Survey</h1>
         <h3>Please fill out the survey below for both Key Stage 1 and Key Stage 2. Rank each computing curriculum teaching point depending
-            on how well you feel you know them. Click "Submit" when you're done to create your personalised training platform!
-        <br><br><br><br>
+            on how well you feel you know them. Click <span class="purple">"Reset"</span> to clear the form if you need to start again. Click <span class="purple">"Submit"</span> when you're done to create your personalised training platform!
+        <br><br>
         <table class="striped-columns border one">
         <thead>
             <tr>
-                <th class="heading">Key Stage One Teaching Point</th>
+                <th class="heading" style="width:750px">Key Stage One Teaching Points</th>
                 <th>Never Heard Of It</th>
                 <th>Need Some Hints</th>
                 <th>Looks Familiar </th>
@@ -52,71 +52,71 @@
         <tbody>
             <tr>
                 <td>Understand what algorithms are; how they are implemented as programs on digital devices; and  that programs execute by following precise and unambiguous instructions </td>
-                <td><input type="radio" value="1" name="algorithms"/></td>
-                <td><input type="radio" value="2" name="algorithms"/></td>
-                <td><input type="radio" value="3" name="algorithms"/></td>
-                <td><input type="radio" value="4" name="algorithms"/></td>
-                <td><input type="radio" value="5" name="algorithms"/></td>
-                <td><input type="radio" value="6" name="algorithms"/></td>
-                <td><input type="radio" value="7" name="algorithms"/></td>
+                <td><input type="radio" value="1" name="algorithms" required /></td>
+                <td><input type="radio" value="2" name="algorithms" required/></td>
+                <td><input type="radio" value="3" name="algorithms" required/></td>
+                <td><input type="radio" value="4" name="algorithms" required/></td>
+                <td><input type="radio" value="5" name="algorithms" required/></td>
+                <td><input type="radio" value="6" name="algorithms" required/></td>
+                <td><input type="radio" value="7" name="algorithms" required/></td>
             </tr>
             <tr>
                 <td>Create and debug simple programs</td>
-                <td><input type="radio" value="1" name="programs"/></td>
-                <td><input type="radio" value="2" name="programs"/></td>
-                <td><input type="radio" value="3" name="programs"/></td>
-                <td><input type="radio" value="4" name="programs"/></td>
-                <td><input type="radio" value="5" name="programs"/></td>
-                <td><input type="radio" value="6" name="programs"/></td>
-                <td><input type="radio" value="7" name="programs"/></td>
+                <td><input type="radio" value="1" name="programs" required/></td>
+                <td><input type="radio" value="2" name="programs" required/></td>
+                <td><input type="radio" value="3" name="programs" required/></td>
+                <td><input type="radio" value="4" name="programs" required/></td>
+                <td><input type="radio" value="5" name="programs" required/></td>
+                <td><input type="radio" value="6" name="programs" required/></td>
+                <td><input type="radio" value="7" name="programs" required/></td>
             </tr>
             <tr>
                 <td>Use logical reasoning to predict the behaviour of simple programs </td>
-                <td><input type="radio" value="1" name="logic"/></td>
-                <td><input type="radio" value="2" name="logic"/></td>
-                <td><input type="radio" value="3" name="logic"/></td>
-                <td><input type="radio" value="4" name="logic"/></td>
-                <td><input type="radio" value="5" name="logic"/></td>
-                <td><input type="radio" value="6" name="logic"/></td>
-                <td><input type="radio" value="7" name="logic"/></td>
+                <td><input type="radio" value="1" name="logic" required/></td>
+                <td><input type="radio" value="2" name="logic" required/></td>
+                <td><input type="radio" value="3" name="logic" required/></td>
+                <td><input type="radio" value="4" name="logic" required/></td>
+                <td><input type="radio" value="5" name="logic" required/></td>
+                <td><input type="radio" value="6" name="logic" required/></td>
+                <td><input type="radio" value="7" name="logic" required/></td>
             </tr>
             <tr>
                 <td>Use technology purposefully to create, organise, store, manipulate and retrieve digital content </td>
-                <td><input type="radio" value="1" name="purpose"/></td>
-                <td><input type="radio" value="2" name="purpose"/></td>
-                <td><input type="radio" value="3" name="purpose"/></td>
-                <td><input type="radio" value="4" name="purpose"/></td>
-                <td><input type="radio" value="5" name="purpose"/></td>
-                <td><input type="radio" value="6" name="purpose"/></td>
-                <td><input type="radio" value="7" name="purpose"/></td>
+                <td><input type="radio" value="1" name="purpose" required/></td>
+                <td><input type="radio" value="2" name="purpose" required/></td>
+                <td><input type="radio" value="3" name="purpose" required/></td>
+                <td><input type="radio" value="4" name="purpose" required/></td>
+                <td><input type="radio" value="5" name="purpose" required/></td>
+                <td><input type="radio" value="6" name="purpose" required/></td>
+                <td><input type="radio" value="7" name="purpose" required/></td>
             </tr>
             <tr>
                 <td>Recognise common uses of information technology beyond school</td>
-                <td><input type="radio" value="1" name="information"/></td>
-                <td><input type="radio" value="2" name="information"/></td>
-                <td><input type="radio" value="3" name="information"/></td>
-                <td><input type="radio" value="4" name="information"/></td>
-                <td><input type="radio" value="5" name="information"/></td>
-                <td><input type="radio" value="6" name="information"/></td>
-                <td><input type="radio" value="7" name="information"/></td>
+                <td><input type="radio" value="1" name="information" required/></td>
+                <td><input type="radio" value="2" name="information" required/></td>
+                <td><input type="radio" value="3" name="information" required/></td>
+                <td><input type="radio" value="4" name="information" required/></td>
+                <td><input type="radio" value="5" name="information" required/></td>
+                <td><input type="radio" value="6" name="information" required/></td>
+                <td><input type="radio" value="7" name="information" required/></td>
             </tr>
             <tr>
                 <td>Use technology safely and respectfully, keeping personal information private; identify where to go for help and support when they have concerns about content or contact on the internet or other online technologies. </td>
-                <td><input type="radio" value="1" name="safety"/></td>
-                <td><input type="radio" value="2" name="safety"/></td>
-                <td><input type="radio" value="3" name="safety"/></td>
-                <td><input type="radio" value="4" name="safety"/></td>
-                <td><input type="radio" value="5" name="safety"/></td>
-                <td><input type="radio" value="6" name="safety"/></td>
-                <td><input type="radio" value="7" name="safety"/></td>
+                <td><input type="radio" value="1" name="safety" required/></td>
+                <td><input type="radio" value="2" name="safety" required/></td>
+                <td><input type="radio" value="3" name="safety" required/></td>
+                <td><input type="radio" value="4" name="safety" required/></td>
+                <td><input type="radio" value="5" name="safety" required/></td>
+                <td><input type="radio" value="6" name="safety" required/></td>
+                <td><input type="radio" value="7" name="safety" required/></td>
             </tr>
         </tbody>
         </table>
         <br><br>
-        <table class="striped-columns border two">
-        <thead>
+        <table class="striped-columns border one">
+        <thead style="column-width: 50%">
             <tr>
-                <th class="heading">Key Stage Two Teaching Point</th>
+                <th class="heading" style="width:750px">Key Stage Two Teaching Points</th>
                 <th>Never Heard Of It</th>
                 <th>Need Some Hints</th>
                 <th>Looks Familiar </th>
@@ -129,77 +129,79 @@
         <tbody>
             <tr>
                 <td>Design, write and debug programs that accomplish specific goals, including controlling or simulating physical systems; solve problems by decomposing them into smaller parts</td>
-                <td><input type="radio" value="1" name="goals"/></td>
-                <td><input type="radio" value="2" name="goals"/></td>
-                <td><input type="radio" value="3" name="goals"/></td>
-                <td><input type="radio" value="4" name="goals"/></td>
-                <td><input type="radio" value="5" name="goals"/></td>
-                <td><input type="radio" value="6" name="goals"/></td>
-                <td><input type="radio" value="7" name="goals"/></td>
+                <td><input type="radio" value="1" name="goals" required/></td>
+                <td><input type="radio" value="2" name="goals" required/></td>
+                <td><input type="radio" value="3" name="goals" required/></td>
+                <td><input type="radio" value="4" name="goals" required/></td>
+                <td><input type="radio" value="5" name="goals" required/></td>
+                <td><input type="radio" value="6" name="goals" required/></td>
+                <td><input type="radio" value="7" name="goals" required/></td>
             </tr>
             <tr>
                 <td>Use sequence, selection, and repetition in programs; work with variables and various forms of input and output </td>
-                <td><input type="radio" value="1" name="variables"/></td>
-                <td><input type="radio" value="2" name="variables"/></td>
-                <td><input type="radio" value="3" name="variables"/></td>
-                <td><input type="radio" value="4" name="variables"/></td>
-                <td><input type="radio" value="5" name="variables"/></td>
-                <td><input type="radio" value="6" name="variables"/></td>
-                <td><input type="radio" value="7" name="variables"/></td>
+                <td><input type="radio" value="1" name="variables" required/></td>
+                <td><input type="radio" value="2" name="variables" required/></td>
+                <td><input type="radio" value="3" name="variables" required/></td>
+                <td><input type="radio" value="4" name="variables" required/></td>
+                <td><input type="radio" value="5" name="variables" required/></td>
+                <td><input type="radio" value="6" name="variables" required/></td>
+                <td><input type="radio" value="7" name="variables" required/></td>
             </tr>
             <tr>
                 <td>Use logical reasoning to explain how some simple algorithms work and to detect and correct errors in algorithms and programs </td>
-                <td><input type="radio" value="1" name="reasoning"/></td>
-                <td><input type="radio" value="2" name="reasoning"/></td>
-                <td><input type="radio" value="3" name="reasoning"/></td>
-                <td><input type="radio" value="4" name="reasoning"/></td>
-                <td><input type="radio" value="5" name="reasoning"/></td>
-                <td><input type="radio" value="6" name="reasoning"/></td>
-                <td><input type="radio" value="7" name="reasoning"/></td>
+                <td><input type="radio" value="1" name="reasoning" required/></td>
+                <td><input type="radio" value="2" name="reasoning" required/></td>
+                <td><input type="radio" value="3" name="reasoning" required/></td>
+                <td><input type="radio" value="4" name="reasoning" required/></td>
+                <td><input type="radio" value="5" name="reasoning" required/></td>
+                <td><input type="radio" value="6" name="reasoning" required/></td>
+                <td><input type="radio" value="7" name="reasoning" required/></td>
             </tr>
             <tr>
                 <td>Understand computer networks including the internet; how they can provide multiple services, such as the world wide web; and the opportunities they offer for communication and collaboration </td>
-                <td><input type="radio" value="1" name="networks"/></td>
-                <td><input type="radio" value="2" name="networks"/></td>
-                <td><input type="radio" value="3" name="networks"/></td>
-                <td><input type="radio" value="4" name="networks"/></td>
-                <td><input type="radio" value="5" name="networks"/></td>
-                <td><input type="radio" value="6" name="networks"/></td>
-                <td><input type="radio" value="7" name="networks"/></td>
+                <td><input type="radio" value="1" name="networks" required/></td>
+                <td><input type="radio" value="2" name="networks" required/></td>
+                <td><input type="radio" value="3" name="networks" required/></td>
+                <td><input type="radio" value="4" name="networks" required/></td>
+                <td><input type="radio" value="5" name="networks" required/></td>
+                <td><input type="radio" value="6" name="networks" required/></td>
+                <td><input type="radio" value="7" name="networks" required/></td>
             </tr>
             <tr>
                 <td>Use search technologies effectively, appreciate how results are selected and ranked, and be discerning in evaluating digital content </td>
-                <td><input type="radio" value="1" name="search"/></td>
-                <td><input type="radio" value="2" name="search"/></td>
-                <td><input type="radio" value="3" name="search"/></td>
-                <td><input type="radio" value="4" name="search"/></td>
-                <td><input type="radio" value="5" name="search"/></td>
-                <td><input type="radio" value="6" name="search"/></td>
-                <td><input type="radio" value="7" name="search"/></td>
+                <td><input type="radio" value="1" name="search" required/></td>
+                <td><input type="radio" value="2" name="search" required/></td>
+                <td><input type="radio" value="3" name="search" required/></td>
+                <td><input type="radio" value="4" name="search" required/></td>
+                <td><input type="radio" value="5" name="search" required/></td>
+                <td><input type="radio" value="6" name="search" required/></td>
+                <td><input type="radio" value="7" name="search" required/></td>
             </tr>
             <tr>
                 <td>Select, use and combine a variety of software (including internet services) on a range of digital devices to design and create a range of programs, systems and content that accomplish given goals, including collecting, analysing, evaluating  and presenting data and information</td>
-                <td><input type="radio" value="1" name="variety"/></td>
-                <td><input type="radio" value="2" name="variety"/></td>
-                <td><input type="radio" value="3" name="variety"/></td>
-                <td><input type="radio" value="4" name="variety"/></td>
-                <td><input type="radio" value="5" name="variety"/></td>
-                <td><input type="radio" value="6" name="variety"/></td>
-                <td><input type="radio" value="7" name="variety"/></td>
+                <td><input type="radio" value="1" name="variety" required/></td>
+                <td><input type="radio" value="2" name="variety" required/></td>
+                <td><input type="radio" value="3" name="variety" required/></td>
+                <td><input type="radio" value="4" name="variety" required/></td>
+                <td><input type="radio" value="5" name="variety" required/></td>
+                <td><input type="radio" value="6" name="variety" required/></td>
+                <td><input type="radio" value="7" name="variety" required/></td>
             </tr>
             <tr>
                 <td>Use technology safely, respectfully, and responsibly; recognise acceptable/unacceptable behaviour; identify a range of ways to report concerns about content and contact.</td>
-                <td><input type="radio" value="1" name="responsible"/></td>
-                <td><input type="radio" value="2" name="responsible"/></td>
-                <td><input type="radio" value="3" name="responsible"/></td>
-                <td><input type="radio" value="4" name="responsible"/></td>
-                <td><input type="radio" value="5" name="responsible"/></td>
-                <td><input type="radio" value="6" name="responsible"/></td>
-                <td><input type="radio" value="7" name="responsible"/></td>
+                <td><input type="radio" value="1" name="responsible" required/></td>
+                <td><input type="radio" value="2" name="responsible" required/></td>
+                <td><input type="radio" value="3" name="responsible" required/></td>
+                <td><input type="radio" value="4" name="responsible" required/></td>
+                <td><input type="radio" value="5" name="responsible" required/></td>
+                <td><input type="radio" value="6" name="responsible" required/></td>
+                <td><input type="radio" value="7" name="responsible" required/></td>
             </tr>
         </tbody>
         </table>
+        <br><br><br>
         <button class="submitbtn">Submit</button>
+        <input class ="submitbtn" type="reset" name="reset" value="Reset">
         </form>
     </body>
     <script>
@@ -207,5 +209,6 @@
         alert("Thank you for your feedback.");
     }
     </script>
+    <br><br>
 </html>
 

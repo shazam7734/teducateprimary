@@ -13,4 +13,9 @@ class survey extends Model
     public function user(){
          return $this->belongsTo(User::class);
     }
+
+    //This code is for retreiving data from the survey table
+    protected $table = "surveys";
+    protected $fillable = ["name", "value"];
+    
 }

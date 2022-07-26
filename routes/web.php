@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SurveyController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,3 +38,5 @@ Route::view('form','userview');
 Route::post('submit','Companies@save');
 //Maps the surveycontroller and establishes a route for when the user submits the survey form
 Route::post("/survey", [App\Http\Controllers\SurveyController::class, 'store']);
+
+Route::get('surveys',['SurveyController@index']);

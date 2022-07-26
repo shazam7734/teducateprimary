@@ -48,12 +48,11 @@
         </div>
 
         <div class="main" id="section3">
-            <h3 class="font-effect-shadow-multiple">-Our Mission-</h3>
-            <h3 class="mission">Hover Over The Pictures To Learn More!</h3>
-            
+            <h3 class="font-effect-shadow-multiple">-Our Mission-</h3>     
 
             <div class="container">
                 <img src="https://media.getwalkabouts.com/media/tcppel1f/1teacher-benefits-using-technology-in-the-classroom.jpg?anchor=center&mode=crop&width=360&height=220&rnd=132052452031630000" alt="ipads" class="image" style="width:50%">
+                <div class="top-left">View More</div>
                 <div class="middle">
                     <div class="text">To Provide Technical Training Resources For Primary School Teachers based on the Computing Curriculum</div>
                 </div>
@@ -61,6 +60,7 @@
 
             <div class="container" id="img1">
                 <img src="https://elementaryuk.com/wp-content/uploads/2019/07/ipads-QR-code.jpg" alt="ipads" class="image" style="width:50%">
+                <div class="top-left">View More</div>
                 <div class="middle">
                     <div class="text">To Increase Teacher Confidence In Using Techology Within The Classroom</div>
                 </div>
@@ -68,6 +68,7 @@
 
             <div class="container" id="img2">
                 <img src="https://cdn.wallpapersafari.com/47/98/mtYS7K.png" alt="ipads" class="image" style="width:50%">
+                <div class="top-left">View More</div>
                 <div class="middle">
                     <div class="text">To Build a TeDucation Community To Share Ideas and Experiences</div>
                 </div>
@@ -75,6 +76,7 @@
 
             <div class="container" id="img3">
                 <img src="https://s7280.pcdn.co/wp-content/uploads/2020/03/customer_feedback_agile_mainframe_approach-_1400x700-810x405.jpg.optimal.jpg" alt="ipads" class="image" style="width:50%">
+                <div class="top-left">View More</div>
                 <div class="middle">
                     <div class="text">To Create Positive Experiences Based On Your Feedback!</div>
                 </div>
@@ -104,17 +106,19 @@
                 with the TeDucation Community. You can see prime examples of how other teachers have done a computing lesson, with examples of students work
                 and any other tips and tricks they've shared. Feel free to post a blog of your own each time you complete a computing lesson! The more likes you 
                 get, the more prizes you win! 
-            <h6>Hover over the pictures to discover how it works!</h6>
+            <h6>View more to discover how it works!</h6>
             
             <div class="container" id="img4">
-                <img src="https://media.istockphoto.com/photos/customer-satisfaction-survey-concept-businessman-using-computer-picture-id1312214761?b=1&k=20&m=1312214761&s=170667a&w=0&h=k5-8lZoIyHJGfcMAtSD0iahOD3EyDg0vOlvd4FTXsC8=" class="image" style="width:50%">
+                <img src="https://patientengagementhit.com/images/site/article_headers/_normal/online-provider-reviews.jpg" class="image" style="width:50%">
+                <div class="top-left">View More</div>
                 <div class="middle">
                     <div class="text">1. Take a 1 minute <br> computing curriculum survey!</div>
                 </div>
             </div>
             
             <div class="container" id="img5">
-                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/d58c4917491239.562baa3c36c00.jpg" class="image" style="width:50%">
+                <img src="https://blog.coursify.me/wp-content/uploads/2019/01/online-training-platform.png" class="image" style="width:50%">
+                <div class="top-left">View More</div>
                 <div class="middle">
                     <div class="text">2. Get a personalised training <br> platform filled with computing <br> lessons designed for YOU!</div>
                 </div>
@@ -122,6 +126,7 @@
 
             <div class="container" id="img6">
                 <img src="https://socialengineindia.com/blog/wp-content/uploads/2019/01/social-networking-service.jpg" class="image" style="width:50%">
+                <div class="top-left">View More</div>
                 <div class="middle">
                     <div class="text">3. Build a social network <br> with fellow TeDucators <br> to share your experiences!</div>
                 </div>
@@ -130,41 +135,41 @@
 
         <div class="main" id="section5">
             <h7 class="font-effect-shadow-multiple">-Getting Started-</h7> <br><br><br><br><be>
-            <h8>Hover over the pictures to learn how in 5 easy steps!</h8>
+            <h8>Learn how in 5 easy steps!</h8>
             <div id="img7">
-                <img src="https://i.ibb.co/3Yx1zNt/getting-started.png" class="image" style="width:70%">
+            <img src="https://i.ibb.co/k9XGSKy/flow3.jpg" class="image, center" style="width:53%">
             </div>
 
             <div class="container" id="img8">
-                <img src="https://i.ibb.co/c1pjvmd/login.png" class="image">
+                <img src="https://cdn-icons-png.flaticon.com/512/295/295128.png" class="image">
                 <div class="middle">
                     <div class="text">Step 1: <a href="http://127.0.0.1:8000/register">Register</a> <br> and <br> <a href="http://127.0.0.1:8000/login">Log in</a>!</div>
                 </div>
             </div>
 
             <div class="container" id="img9">
-                <img src="https://i.ibb.co/mvJkwdR/survey.png" class="image">
+                <img src="https://w7.pngwing.com/pngs/369/468/png-transparent-computer-icons-flat-design-checklist-sequence-of-numbers-web-design-logo-apartment-thumbnail.png" class="image" style="border-radius: 50%">
                 <div class="middle">
                     <div class="text">Step 2: From your profile page, take the computing curriculum survey!</div>
                 </div>
             </div>
 
             <div class="container" id="img10">
-                <img src="https://nbsl.org.uk/images/bullets/People/training-areas.jpg" class="image">
+                <img src="https://www.pngitem.com/pimgs/m/596-5965823_training-and-development-icon-clipart-png-download-training.png" class="image" style="border-radius: 50%">
                 <div class="middle">
                     <div class="text">Step 3: Access generated training resources and complete lessons with students</div>
                 </div>
             </div>
 
             <div class="container" id="img11">
-                <img src="https://y26uq11r8xr1zyp0d3inciqv-wpengine.netdna-ssl.com/wp-content/uploads/2019/10/48-1-1024x600.jpg " class="image">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/feedback-chat-comment-discussion-message-complaint-bubble-2-5284.png" class="image" style="border-radius: 50%">
                 <div class="middle">
                     <div class="text">Step 4: Leave feedback for each lesson for the application developer</div>
                 </div>
             </div>
 
             <div class="container" id="img12">
-                <img src="https://media.istockphoto.com/vectors/social-media-marketing-like-comment-share-signs-vector-id1042841208?k=20&m=1042841208&s=170667a&w=0&h=NIZW_XTfxQYkaiZJqq1OonU0TNWJvImjO67rIbWAncg= " class="image">
+                <img src="https://icon-library.com/images/people-talking-icon-png/people-talking-icon-png-18.jpg" class="image" style="border-radius: 50%">
                 <div class="middle">
                     <div class="text">Step 5: Share your experience on the TeDucation Community page to earn likes, comments, points and rewards!</div>
                 </div>

@@ -29,8 +29,27 @@
             </div>
         </div>
     </div>
+    
+    @endsection      
+    
     <p>Take the <a href="/survey">Computing Curriculum Survey</a> to generate your personalised training resources!</p>
-    @endsection
+    <table border="1">
+        <thead>
+            <tr>
+                <td>Teaching Point</td>
+                <td>Survey Result</td>
+            </tr>
+        <thead>
+        <tbody>
+            @foreach ($surveys as $survey)
+            <tr>
+                <td>{{ $survey->name }}</td>
+                <td>{{ $survey->value }</td>
+            </tr>
+            @endforeach
+        </tbody>
+    </table>
+
 </body>
 
 
