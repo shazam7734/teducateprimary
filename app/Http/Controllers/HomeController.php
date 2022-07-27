@@ -22,14 +22,19 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+
     public function index()
     {
-        //need the same function in the home controller to ensure the surveys variale is being passed back to the home view
         $user_id=\Auth::user()->id;
-        #dd(strval($user_id));
-        #$user_id=strval($user_id)
-        $surveys = DB::select('select name, value from surveys where user_id=?',[$user_id]);
+        //need the same function in the home controller to ensure the surveys variale is being passed back to the home view
+        $surveys = DB::table('surveys')
+            ->select('name','value')
+            ->where('user_id', $user_id)
+            ->orderBy('updated_at', 'DESC')
+            ->limit(13)
+            ->get();
         #dd($surveys);
+        //redirects to the home view with the data stored in the surveys variable
         return view('home',['surveys'=>$surveys]);
     }
 }

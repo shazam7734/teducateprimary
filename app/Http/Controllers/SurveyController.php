@@ -39,7 +39,12 @@ class SurveyController extends Controller
         #dd(strval($user_id));
         #$user_id=strval($user_id);
         //Pulling data from the surveys table to display on a user's profile page
-        $surveys = DB::select('select name, value from surveys where user_id=?, ORDER BY updated_at DESC LIMIT 13', [$user_id]);
+        $surveys = DB::table('surveys')
+            ->select('name','value')
+            ->where('user_id', $user_id)
+            ->orderBy('updated_at', 'DESC')
+            ->limit(13)
+            ->get();
         #dd($surveys);
         //redirects to the home view with the data stored in the surveys variable
         return view('home',['surveys'=>$surveys]);
