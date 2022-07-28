@@ -4,7 +4,12 @@
 <head>
 <style>
     body {
-    background-image: url('https://img.freepik.com/free-vector/smooth-white-wave-background_52683-55288.jpg?w=2000');
+    background: url('http://st2.depositphotos.com/8187094/11861/i/450/depositphotos_118611828-Open-book-hardback-books-on-wooden-table.-Education-background.-Back-to-school.-Copy-space-for-text..jpg') no-repeat 
+    center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
     }
 </style>
 </head>
