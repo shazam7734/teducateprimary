@@ -6,10 +6,10 @@
     body {
     background: url('http://st2.depositphotos.com/8187094/11861/i/450/depositphotos_118611828-Open-book-hardback-books-on-wooden-table.-Education-background.-Back-to-school.-Copy-space-for-text..jpg') no-repeat 
     center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     }
 </style>
 </head>
@@ -29,13 +29,15 @@
                         @endif
 
                         {{ __('You are logged in!') }}
+                        <p>Take the <a href="/survey">Computing Curriculum Survey</a> to generate your personalised training resources!</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     
-    <p>Take the <a href="/survey">Computing Curriculum Survey</a> to generate your personalised training resources!</p>
+    
+    <p> Below are your results of the survey (1 being least familar and 7 being an expert):</p>
     <table border="1">
         <thead>
                 <tr>
@@ -51,7 +53,29 @@
                 </tr>
                 @endforeach
             </tbody>
-        </table>
+        </thead>
+    </table>
+    <br>
+    <table border="1">
+        <thead>
+                <tr>
+                    <td>Key Stage</td>
+                    <td>Curriculum Point</td>
+                    <td>Tutorial 1</td>
+                    <td>Tutorial 2</td>
+                    <td>Tutorial 3</td>
+                    <td>Primary Instructions</td>
+                    <td>Secondary Instructions</td>
+                    <td>Lesson Plan</td>
+                    <td>Feedback</td>
+                    <td>Share</td>
+                    
+                </tr>
+            <thead>
+            <tbody>
+               
+            </tbody>
+        </thead>
     </table>
     @endsection      
     

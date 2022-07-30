@@ -7,9 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class resources extends Model
 {
-    use HasFactory; 
+    use HasFactory;
 
-     //This code is for retreiving data from the survey table
-     protected $table = "resources";
-     protected $fillable = ["value", "name", "tutorial1", "tutorial2", "tutorial3", "instructions", "lesson", "feedback", "share"];
+    //This code is for retreiving data from the survey table
+    protected $table = "resources";
+    protected $fillable = ["key_stage", "curriculum_point", "value", "name", "tutorial1", "tutorial2", "tutorial3", "primary_instructions", "secondary_instructions", "lesson", "feedback", "share"];
+
 }

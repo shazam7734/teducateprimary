@@ -49,5 +49,7 @@ class SurveyController extends Controller
         //redirects to the home view with the data stored in the surveys variable
         return view('home',['surveys'=>$surveys]);
     }
+
+    
     
 }

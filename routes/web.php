@@ -40,3 +40,5 @@ Route::post('submit','Companies@save');
 Route::post("/survey", [App\Http\Controllers\SurveyController::class, 'store']);
 //Maps the route for the survey results once a user submits data in the survey
 Route::get("/Results", [App\Http\Controllers\SurveyController::class,'index']);
+//Maps the route for the resources based on survey results
+Route::get("/Resources", [App\Http\Controllers\ResourcesController::class,'resources']);

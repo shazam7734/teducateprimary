@@ -15,12 +15,15 @@ return new class extends Migration
     {
         Schema::create('resources', function (Blueprint $table) {
             $table->id();
+            $table->integer("key_stage")->nullable();
             $table->integer("value")->nullable();
             $table->string("name")->nullable();
+            $table->string("curriculum_point")->nullable();
             $table->string("tutorial1")->nullable();
             $table->string("tutorial2")->nullable();
             $table->string("tutorial3")->nullable();
-            $table->string("instructions")->nullable();
+            $table->string("primary_instructions")->nullable();
+            $table->string("secondary_instructions")->nullable();
             $table->string("lesson")->nullable();
             $table->string("feedback")->nullable();
             $table->string("share")->nullable();
