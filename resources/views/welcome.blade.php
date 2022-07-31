@@ -106,6 +106,7 @@
                 with the TeDucation Community. You can see prime examples of how other teachers have done a computing lesson, with examples of students work
                 and any other tips and tricks they've shared. Feel free to post a blog of your own each time you complete a computing lesson! The more likes you 
                 get, the more prizes you win! 
+
             
             <div class="container" id="img4">
                 <img src="https://patientengagementhit.com/images/site/article_headers/_normal/online-provider-reviews.jpg" class="image" style="width:50%">

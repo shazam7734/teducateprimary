@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.homeview')
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,31 +11,31 @@
     -o-background-size: cover;
     background-size: cover;
     }
+
 </style>
 </head>
 <body>
-    @section('content')
-    <div class="container">
-        <div class="row justify-content-center">
+@section('content')
+    <div class="">
+        <div class="">
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">{{ __('Dashboard') }}</div>
-
                     <div class="card-body">
                         @if (session('status'))
                             <div class="alert alert-success" role="alert">
                                 {{ session('status') }}
-                            </div>
+                        </div>
                         @endif
 
                         {{ __('You are logged in!') }}
+                        <p>View our <a href="/additional">Additional Resources</a> page for some great, ready to use tools to help engage students in technology!
                         <p>Take the <a href="/survey">Computing Curriculum Survey</a> to generate your personalised training resources!</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
     
     <p> Below are your results of the survey (1 being least familar and 7 being an expert):</p>
     <table border="1">

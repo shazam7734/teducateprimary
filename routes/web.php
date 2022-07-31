@@ -26,6 +26,15 @@ Route::get('/curriculum', function () {
     return view('curriculum');
 });
 
+Route::get('/additional', function () {
+    return view('additional');
+});
+
+Route::get('/profile', function () {
+    return view('profile');
+});
+
+
 Route::get('/about', function () {
     return view('about');
 });
@@ -42,3 +51,5 @@ Route::post("/survey", [App\Http\Controllers\SurveyController::class, 'store']);
 Route::get("/Results", [App\Http\Controllers\SurveyController::class,'index']);
 //Maps the route for the resources based on survey results
 Route::get("/Resources", [App\Http\Controllers\ResourcesController::class,'resources']);
+
+
