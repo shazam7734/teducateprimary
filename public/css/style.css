@@ -721,9 +721,72 @@ body {
     font-size: large;
     color: gold;
     font-weight: bold;
+    text-align: center;
 
+}
+
+.toprow {
+    background-color: gold;
+    padding: 12px 15px;
+}
+
+.toprow2 {
+    background-color: rgb(6, 239, 232);
+    padding: 12px 15px;
+
+}
+
+.gold {
+    color: gold;
+    padding-right:140px;
+}
+
+.blue {
+    color: rgb(6, 239, 232);
+}
+p.yeargroup {
+    font-size: small;
+    font-weight: bold;
+}
+p.coursebody {
+    font-style: oblique;
+    padding: 8px;
 }
 
 .course {
     cursor: pointer;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-left: auto;
+    margin-right: auto;
+}
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+    font-size:medium;
+    font-weight: bold;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
 }

@@ -89,7 +89,9 @@
                         
                     <div id="Home" class="tabcontent">
                     <h3>Below are you survey results!</h3>
-                    <table border="1">
+                    <p style="text-align: center">(1 being least familar and 7 being an expert)</p>
+                    
+                    <table class="styled-table">
                         <thead>
                             <tr>
                                 <td>Teaching Point</td>
@@ -110,24 +112,26 @@
 
                     <div id="News" class="tabcontent">
                     <h3>Below are your courses!</h3>
-                    <div id="newshead"> &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp  Key Stage 1 &nbsp &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp  Key Stage 2</div> <br>
+                    <div id="newshead">
+                        <p>
+                            <span class="gold">Key Stage 1</span><span class="blue">Key Stage 2</span>
+                        </p>
+                    </div>
                         <div class="flex-container">
                             <div class="flex-child magenta">
-                                <h4> Algorithms </h4>
-                                <p> In this course, you will learn what algorithms are, how they are implemented as programs on digital devices, and that programs execute by following precise and unambiguous instructions</p>
-                                <p style="color: gold"> Key Stage 1 </p>
+                                <h4 class="toprow"> Algorithms </h4>
+                                <p class="coursebody"> In this course, you will learn what algorithms are, how they are implemented as programs on digital devices, and that programs execute by following precise and unambiguous instructions</p>
                                 <button class="course" 
-                                    onclick="window.location.href = '#';">
+                                    onclick="window.location.href = '/ks1course';">
                                         Start Course
                                 </button>
                             </div>
                             
                             <div class="flex-child green">
-                                <h4> Debugging </h4>
+                                <h4 class="toprow2"> Debugging </h4>
                                 <p> In this course, you will learn how to design, write and debug programs that accomplish specific goals, including controlling or simulating physical systems; solve problems by decomposing them into smaller parts</p>
-                                <p style="color: gold"> Key Stage 2 </p>
                                 <button class="course" 
-                                    onclick="window.location.href = '#';">
+                                    onclick="window.location.href = '/ks2course';">
                                         Start Course
                                 </button>
                             </div>
@@ -135,21 +139,19 @@
                         <br>
                         <div class="flex-container">
                             <div class="flex-child magenta">
-                                <h4> Programs </h4>
+                                <h4 class="toprow"> Programs </h4>
                                 <p> In this course, you will learn how to create and debug simple programs</p>
-                                <p style="color: gold"> Key Stage 1 </p>
                                 <button class="course" 
-                                    onclick="window.location.href = '#';">
+                                    onclick="window.location.href = '/ks1course';">
                                         Start Course
                                 </button>
                             </div>
 
                             <div class="flex-child green">
-                                <h4> Variables </h4>
+                                <h4 class="toprow2"> Variables </h4>
                                 <p> In this course, you will learn how to use sequence, selection, and repetition in programs; work with variables and various forms of input and output </p>
-                                <p style="color: gold"> Key Stage 2 </p>
                                 <button class="course" 
-                                    onclick="window.location.href = '#';">
+                                    onclick="window.location.href = '/ks2course';">
                                         Start Course
                                 </button>
                             </div>
@@ -157,21 +159,19 @@
                         <br>
                         <div class="flex-container">
                             <div class="flex-child magenta">
-                                <h4> Logic </h4>
+                                <h4 class="toprow"> Logic </h4>
                                 <p> In this course, you will learn how to use logical reasoning to predict the behaviour of simple programs </p>
-                                <p style="color: gold"> Key Stage 1 </p>
                                 <button class="course" 
-                                    onclick="window.location.href = '#';">
+                                    onclick="window.location.href = '/ks1course';">
                                         Start Course
                                 </button>
                             </div>
 
                             <div class="flex-child green">
-                                <h4> Reasoning </h4>
+                                <h4 class="toprow2"> Reasoning </h4>
                                 <p> In this course, you will learn how to use logical reasoning to explain how some simple algorithms work and to detect and correct errors in algorithms and programs  </p>
-                                <p style="color: gold"> Key Stage 2 </p>
                                 <button class="course" 
-                                    onclick="window.location.href = '#';">
+                                    onclick="window.location.href = '/ks2course';">
                                         Start Course
                                 </button>
                             </div>
@@ -179,21 +179,19 @@
                         <br>
                         <div class="flex-container">
                             <div class="flex-child magenta">
-                                <h4> Purpose </h4>
+                                <h4 class="toprow"> Purpose </h4>
                                 <p> In this course, you will learn how to use technology purposefully to create, organise, store, manipulate and retrieve digital content </p>
-                                <p style="color: gold"> Key Stage 1 </p>
                                 <button class="course" 
-                                    onclick="window.location.href = '#';">
+                                    onclick="window.location.href = '/ks1course';">
                                         Start Course
                                 </button>
                             </div>
 
                             <div class="flex-child green">
-                                <h4> Networks </h4>
+                                <h4 class="toprow2"> Networks </h4>
                                 <p> In this course, you will learn about computer networks including the internet; how they can provide multiple services, such as the world wide web; and the opportunities they offer for communication and collaboration  </p>
-                                <p style="color: gold"> Key Stage 2 </p>
                                 <button class="course" 
-                                    onclick="window.location.href = '#';">
+                                    onclick="window.location.href = '/ks2course';">
                                         Start Course
                                 </button>
                             </div>
@@ -201,21 +199,19 @@
                         <br>
                         <div class="flex-container">
                             <div class="flex-child magenta">
-                                <h4> Information </h4>
+                                <h4 class="toprow"> Information </h4>
                                 <p> In this course, you will learn how to recognise common uses of information technology beyond school </p>
-                                <p style="color: gold"> Key Stage 1 </p>
                                 <button class="course" 
-                                    onclick="window.location.href = '#';">
+                                    onclick="window.location.href = '/ks2course';">
                                         Start Course
                                 </button>
                             </div>
 
                             <div class="flex-child green">
-                                <h4> Search </h4>
+                                <h4 class="toprow2"> Search </h4>
                                 <p> In this course, you will learn how to use search technologies effectively, appreciate how results are selected and ranked, and be discerning in evaluating digital content</p>
-                                <p style="color: gold"> Key Stage 2 </p>
                                 <button class="course" 
-                                    onclick="window.location.href = '#';">
+                                    onclick="window.location.href = '/ks1course';">
                                         Start Course
                                 </button>
                             </div>
@@ -223,21 +219,19 @@
                         <br>
                         <div class="flex-container">
                             <div class="flex-child magenta">
-                                <h4> Safety </h4>
+                                <h4 class="toprow"> Safety </h4>
                                 <p> In this course, you will learn how to use technology safely and respectfully, keeping personal information private; identify where to go for help and support when they have concerns about content or contact on the internet or other online technologies. </p>
-                                <p style="color: gold"> Key Stage 1 </p>
                                 <button class="course" 
-                                    onclick="window.location.href = '#';">
+                                    onclick="window.location.href = '/ks2course';">
                                         Start Course
                                 </button>
                             </div>
 
                             <div class="flex-child green">
-                                <h4> Variety </h4>
+                                <h4 class="toprow2"> Variety </h4>
                                 <p> In this course, you will learn how to select, use and combine a variety of software (including internet services) on a range of digital devices to design and create a range of programs, systems and content that accomplish given goals, including collecting, analysing, evaluating  and presenting data and information</p>
-                                <p style="color: gold"> Key Stage 2 </p>
                                 <button class="course" 
-                                    onclick="window.location.href = '#';">
+                                    onclick="window.location.href = '/ks1course';">
                                         Start Course
                                 </button>
                             </div>
@@ -250,11 +244,10 @@
                             </div>
 
                             <div class="flex-child green">
-                                <h4> Responsible </h4>
+                                <h4 class="toprow2"> Responsible </h4>
                                 <p> In this course, you will learn how to use technology safely, respectfully, and responsibly; recognise acceptable/unacceptable behaviour; identify a range of ways to report concerns about content and contact.</p>
-                                <p style="color: gold"> Key Stage 2 </p>
                                 <button class="course" 
-                                    onclick="window.location.href = '#';">
+                                    onclick="window.location.href = '/ks2course';">
                                         Start Course
                             </div>
                         </div>
@@ -266,7 +259,7 @@
                     <a href="https://www.linkedin.com/login">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/2048px-LinkedIn_icon_circle.svg.png" width="80" height="80">
                     </a>
-                    
+
                     <a href="https://www.facebook.com/login/">
                         <img src="https://icon-library.com/images/facebook-f-icon/facebook-f-icon-26.jpg" width="80" height="80">
                     </a>

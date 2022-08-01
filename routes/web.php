@@ -46,6 +46,14 @@ Route::get('/survey', function () {
     return view('survey');
 });
 
+Route::get('/ks1course', function () {
+    return view('ks1course');
+});
+
+Route::get('/ks2course', function () {
+    return view('ks2course');
+});
+
 Route::view('form','userview');
 Route::post('submit','Companies@save');
 //Maps the surveycontroller and establishes a route for when the user submits the survey form
