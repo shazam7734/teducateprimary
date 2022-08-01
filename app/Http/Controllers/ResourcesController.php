@@ -26,7 +26,7 @@ class ResourcesController extends Controller
         $resources=arrray();
         foreach($survey as $surveys){
         $result = DB::table('surveys')
-            ->select('key_stage', 'curriculum_point','tutorial1', 'tutorial2', 'tutorial3', "primary_instructions", "secondary_instructions", "lesson", "feedback", "share")
+            ->select('key_stage', 'year', 'curriculum_point','tutorial1', 'tutorial2', 'tutorial3', "primary_instructions", "secondary_instructions", "lesson", "feedback", "share")
             ->where('name', $survey->name)
             ->where('value', $survey->value)
             ->get();

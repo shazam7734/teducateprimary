@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('resources', function (Blueprint $table) {
             $table->id();
             $table->integer("key_stage")->nullable();
+            $table->integer("year")->nullable();
             $table->integer("value")->nullable();
             $table->string("name")->nullable();
             $table->string("curriculum_point")->nullable();

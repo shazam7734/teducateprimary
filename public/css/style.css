@@ -365,6 +365,9 @@ html {
 
         table {
             background-color: rgb(240, 240, 240);
+            color: black;
+            margin-left:auto; 
+            margin-right:auto;
         }
         
         table.striped-columns tbody td:nth-of-type(even),
@@ -528,7 +531,6 @@ body {
 
 
 
-* {box-sizing: border-box}
 
     /* Set height of body and the document to 100% */
     body, html {
@@ -557,7 +559,7 @@ body {
     .tabcontent {
     color: white;
     display: none;
-    padding: 100px 20px;
+    padding: 65px 20px;
     height: 100%;
     }
 
@@ -689,4 +691,39 @@ body {
   .header-right {
     float: none;
   }
+}
+
+.h9 {
+    font-weight: bold;
+    font-size: medium;
+    font-family:'Lucida Sans'
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+    height: 400px;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-image: linear-gradient(white, grey);
+    color: black;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+    vertical-align: middle;
+} 
+
+#newshead {
+    font-size: large;
+    color: gold;
+    font-weight: bold;
+
+}
+
+.course {
+    cursor: pointer;
 }
