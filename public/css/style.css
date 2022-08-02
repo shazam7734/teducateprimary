@@ -725,6 +725,7 @@ body {
 
 }
 
+
 .toprow {
     background-color: gold;
     padding: 12px 15px;
@@ -800,3 +801,31 @@ p.coursebody {
 .styled-table tbody tr:last-of-type {
     border-bottom: 2px solid #009879;
 }
+
+.hovertext {
+    position: relative;
+    border-bottom: 1px dotted black;
+  }
+  
+  .hovertext:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    width: 140px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    transition: opacity 1s ease-in-out;
+  
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 110%;
+  }
+  
+  .hovertext:hover:before {
+    opacity: 1;
+    visibility: visible;
+  }

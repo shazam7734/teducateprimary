@@ -66,11 +66,21 @@
                     <a href="/survey" style="color: red">Curriculum Survey</a><br/>
                     <a href="/certificate">Certificates of Completion</a><br/>
                     <p>Additional Resources</p>
-                    <img src="https://lh3.googleusercontent.com/-Y-67Zo3LRZk/XcCGCmV7wqI/AAAAAAAAAAM/bRORc48aq9YnEz1Xxety_iZPUPyxAvB_wCLcBGAsYHQ/s400/icon_square_128x128.png" width="20" height="20"/> <a href="https://www.peardeck.com/googleslides">Pear Deck</a><br/>
-                    <img src="https://code.org/images/logo.svg" width="20" height="20"/> <a href="https://code.org/educate/curriculum/csf">Code.org Student Courses</a><br/>
-                    <img src="https://pbs.twimg.com/profile_images/1200401131131813888/qnFl7BTD_400x400.jpg" width="20" height="20"/> <a href="https://teachcomputing.org/curriculum">Teach Computing</a><br/>
-                    <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQHcfEgd6cjXLQ/company-logo_200_200/0/1590673372414?e=2147483647&v=beta&t=qKog8BRrWo6IGwli_H1SwqGezwZKvbZetDlLDnfjNKg" width="20" height="20"/> <a href="https://www.barefootcomputing.org/curriculum">Barefoot Computing</a><br/>
-                    <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/hvdbkhja4kca3ip5hwzr" width="20" height="20"/> <a href="https://theictservice.org.uk/primary-computing-curriculum/class-teacher-hub/">The ICT Service</a><br/>
+                    <span class="hovertext" data-hover="The fastest way to transform Google Drive presentations into classroom conversations through student engagement.">
+                        <img src="https://lh3.googleusercontent.com/-Y-67Zo3LRZk/XcCGCmV7wqI/AAAAAAAAAAM/bRORc48aq9YnEz1Xxety_iZPUPyxAvB_wCLcBGAsYHQ/s400/icon_square_128x128.png" width="20" height="20"/> <a href="https://www.peardeck.com/googleslides">Pear Deck</a><br/>
+                    </span>
+                    <span class="hovertext" data-hover="A fantastic computing curriculum designed for students in reception through Year 5, which includes students 5-11 years old!">
+                        <img src="https://code.org/images/logo.svg" width="20" height="20"/> <a href="https://code.org/educate/curriculum/csf">Code.org Student Courses</a><br/>
+                    </span>
+                    <span class="hovertext" data-hover="Great computing resources which include lesson plans, slides, activity sheets, homework, and assessments. Teacher guide by Year Group is also provided!">
+                        <img src="https://pbs.twimg.com/profile_images/1200401131131813888/qnFl7BTD_400x400.jpg" width="20" height="20"/> <a href="https://teachcomputing.org/curriculum">Teach Computing</a><br/>
+                    </span>
+                    <span class="hovertext" data-hover="Created by teachers and backed by research, Barefoot is tailored to the national curriculum in England, Scotland, Wales and Northern Ireland">
+                        <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQHcfEgd6cjXLQ/company-logo_200_200/0/1590673372414?e=2147483647&v=beta&t=qKog8BRrWo6IGwli_H1SwqGezwZKvbZetDlLDnfjNKg" width="20" height="20"/> <a href="https://www.barefootcomputing.org/curriculum">Barefoot Computing</a><br/>
+                    </span>
+                    <span class="hovertext" data-hover="Computing Curriculum planning templates for each year group, populated with the age-appropriate progression statements and assessments!">
+                        <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/hvdbkhja4kca3ip5hwzr" width="20" height="20"/> <a href="https://theictservice.org.uk/primary-computing-curriculum/class-teacher-hub/">The ICT Service</a><br/>
+                    </span>    
                 </div>
             </div>
     
