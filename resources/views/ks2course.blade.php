@@ -1,32 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+    <!-- Styles -->
+    <link href="/css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-    <h1> Please select your year group</h1>
-        <form action="#">
-            <label for="ks2group">Year Group:</label>
-            <select id="ks2group" name="ygroup">
-                <option value="ygroup">Year Group</option>
-                <option value="three">Year 3</option>
-                <option value="four">Year 4</option>
-                <option value="five">Year 5</option>
-                <option value="six">Year 6</option>
-            </select>
-            <input type="submit">
-        </form>
-    <h1> Training Course: [name]</h1>
-    <h1> Survey Score: [value]</h1>
-    <h1> Training Level: [Easy, Intermediate, Advanced (depending on value)]
-    <h2> Can this page be dynamic, depending on which course button the user clicks and based on the survey results?</p>
+@section('content')
+<div class="header">
+        <div class ="logo">
+            <a href="{{ url('/') }}" class="logo">
+                <img src="https://i.ibb.co/HP9xhP8/logo-banner.jpg" width="80" height="50"> Empowering You
+            </a>
+        </div>
+        <div class="header-right">
+            <a href="http://127.0.0.1:8000/home">Home - </a>
+            <a href="{{ route('logout') }}">Logout</a>
+        </div>
+    </div>
 
-    <h3>Tutorials</h3>
-    <p>select from db turial1, tutorial2, tutorial3 where survey result value = ? 
+    <div>
+        <h2> Please select your year group</h2>
+            <form action="#">
+                <label for="ks2group">Year Group:</label>
+                <select id="ks2group" name="ks2group">
+                    <option value="ygroup">Year Group</option>
+                    <option value="three">Year 3</option>
+                    <option value="four">Year 4</option>
+                    <option value="five">Year 5</option>
+                    <option value="six">Year 6</option>
+                </select>
+                <input type="submit">
+            </form>
+        <h2> Training Course: [name] </h2>
+        <h2> Survey Score: [value]</h2>
+        <h2> Training Level: [Easy, Intermediate, Advanced (depending on value)]</h2>
+        <p> Can this page be dynamic, depending on which course button the user clicks and based on the survey results?</p>
 
-    <h3>Instructions</h3>
-    <p>select from db primary_instructions, secondary_instructions where survey result value = ? 
+        <h3>Tutorials</h3>
+        <p>select from db turial1, tutorial2, tutorial3 where survey result value = ? 
+
+        <h3>Instructions</h3>
+        <p>select from db primary_instructions, secondary_instructions where survey result value = ? 
+        
+        <h3>Lesson Plans</h3>
+        <p>select from db lesson where survey result value = ?
+    </div>
+</body>
     
-    <h3>Lesson Plans</h3>
-    <p>select from db lesson where survey result value = ? 
+    

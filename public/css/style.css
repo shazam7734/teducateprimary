@@ -733,7 +733,17 @@ body {
 .toprow2 {
     background-color: rgb(6, 239, 232);
     padding: 12px 15px;
+}
 
+.toprow3 {
+    background-color: rgb(235, 155, 250);
+    padding: 12px 15px;
+    font-family: cursive;
+}
+
+#complete {
+    background-image: url("https://c8.alamy.com/zooms/9/1ab5b2ffa50f4d4b93a5a8986990226b/t67pbm.jpg"); 
+    object-fit: cover
 }
 
 .gold {

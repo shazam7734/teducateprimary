@@ -64,6 +64,7 @@
                     <p>Computing Curriculum Links</p>
                     <a href="/curriculum">Curriculum Explained</a><br/>
                     <a href="/survey" style="color: red">Curriculum Survey</a><br/>
+                    <a href="/certificate">Certificates of Completion</a><br/>
                     <p>Additional Resources</p>
                     <img src="https://lh3.googleusercontent.com/-Y-67Zo3LRZk/XcCGCmV7wqI/AAAAAAAAAAM/bRORc48aq9YnEz1Xxety_iZPUPyxAvB_wCLcBGAsYHQ/s400/icon_square_128x128.png" width="20" height="20"/> <a href="https://www.peardeck.com/googleslides">Pear Deck</a><br/>
                     <img src="https://code.org/images/logo.svg" width="20" height="20"/> <a href="https://code.org/educate/curriculum/csf">Code.org Student Courses</a><br/>
@@ -238,9 +239,18 @@
                         </div>
                         <br>
                         <div class="flex-container">
-                            <div class="flex-child magenta" style="background: gold">
-                                <h4> You Made It! </h4>
-                                <p> Congratulations on completing your training courses!</p>
+                            <div class="flex-child magenta" id="complete">
+                                <h4 class="toprow3"> You Made It! </h4>
+                                <p> Congratulations on completing your training courses! Challenge yourself to further by taking the Key Stage 1 or Key Stage 2 Computing Quizes to earn your <br>Certificate of Completion!</p>
+                                <button class="course"
+                                    onclick="window.location.href = '/ks1quiz';">
+                                        KS1 Computing Quiz
+                                </button>
+                                <br><br>
+                                <button class="course" 
+                                    onclick="window.location.href = '/ks2quiz';">
+                                        KS2 Computing Quiz
+                                </button>
                             </div>
 
                             <div class="flex-child green">
@@ -249,6 +259,7 @@
                                 <button class="course" 
                                     onclick="window.location.href = '/ks2course';">
                                         Start Course
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -256,14 +267,7 @@
                     <div id="Contact" class="tabcontent">
                     <h3>Community Page</h3>
                     <p>Share your experiences!</p>
-                    <a href="https://www.linkedin.com/login">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/2048px-LinkedIn_icon_circle.svg.png" width="80" height="80">
-                    </a>
-
-                    <a href="https://www.facebook.com/login/">
-                        <img src="https://icon-library.com/images/facebook-f-icon/facebook-f-icon-26.jpg" width="80" height="80">
-                    </a>
-
+                        <a class="twitter-timeline" data-width="470" data-height="600" href="https://twitter.com/SarahAz21203704?ref_src=twsrc%5Etfw">Tweet Your Experiences to TeDucate!</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
                 </div>
             </div>
