@@ -13,13 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('surveys', function (Blueprint $table) {
-            $table->id();
-            $table->integer("user_id");
-            $table->integer("value")->nullable();
-            $table->string("name")->nullable();
-            $table->timestamps();
-            $table-> index("user_id");
+        Schema::table('users', function (Blueprint $table) {
+            //
         });
     }
 
@@ -30,6 +25,8 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('surveys');
+        Schema::table('users', function (Blueprint $table) {
+            //
+        });
     }
 };

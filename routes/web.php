@@ -22,7 +22,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::post('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::post('/home', [App\Http\Controllers\HomeController::class, 'upload'])->name('home');
 
 
 Route::get('/curriculum', function () {
@@ -46,10 +46,13 @@ Route::get('/survey', function () {
     return view('survey');
 });
 
-Route::get('/ks1course', function () {
+Route::get('/ks1course/{name}', function () {
     return view('ks1course');
 });
 
+Route::get('/ks2course/{name}', function () {
+    return view('ks2course');
+});
 Route::get('/ks2course', function () {
     return view('ks2course');
 });
@@ -74,5 +77,6 @@ Route::post("/survey", [App\Http\Controllers\SurveyController::class, 'store']);
 Route::get("/Results", [App\Http\Controllers\SurveyController::class,'index']);
 //Maps the route for the resources based on survey results
 Route::get("/Resources", [App\Http\Controllers\ResourcesController::class,'resources']);
-
+Route::get("/ks1course/{name}", [App\Http\Controllers\ResourcesController::class,'ks1_resources']);
+Route::get("/ks2course/{name}", [App\Http\Controllers\ResourcesController::class,'ks2_resources']);
 

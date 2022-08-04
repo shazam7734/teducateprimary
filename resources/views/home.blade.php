@@ -14,6 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script>
+        //This function controlls the tabs and reveals the correct content under each tab on user click [reference 1]
         function openPage(pageName,elmnt,color) {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
@@ -34,7 +35,9 @@
     
 </head>
 <body>
-@section('content')
+<!-- This extends the content section defined in the homeview page -->
+
+    <!-- This extends the banner section with the logo and relavent tablinks -->
     <div class="header">
         <div class ="logo">
             <a href="{{ url('/') }}" class="logo">
@@ -45,26 +48,38 @@
             <a href="http://127.0.0.1:8000/#section3">Our Mission - </a>
             <a href="http://127.0.0.1:8000/#section4">Why TeDucate - </a>
             <a href="http://127.0.0.1:8000/#section5">Getting Started -</a>
-            <a href="{{ route('logout') }}">Logout</a>
+            <a href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();"> {{ __('Logout') }}</a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                @csrf
+            </form>
+                  
+
         </div>
     </div>
-                    
+
+    <!-- This extends the profile page content section, devided into two columns (col-md-4 and col-md-6) -->                
     <div class="container emp-profile">
         <div class="row">
             <div class="col-md-4">
-                <div class="profile-img">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog" alt=""/>
-                    <div class="file btn btn-lg btn-primary">
-                        Change Photo
-                        <input type="file" name="file"/>
-                    </div>
+                <form action="{{route('home')}}" method="POST" enctype="multipart/form-data">
+                        @csrf
+                    <div class="profile-img">
+                        <img src="{{asset('/storage/images/'.Auth::user()->image)}}" alt=""/>
+                        <div class="file btn btn-lg btn-primary">
+                            Change Profile 
+                            <input type="submit" value="Submit">
+                        </div>
+                        <input type="file" value="File Upload" name="image"/>
                 </div>
+                    </form>
 
                 <div class="profile-work">
                     <p>Computing Curriculum Links</p>
                     <a href="/curriculum">Curriculum Explained</a><br/>
                     <a href="/survey" style="color: red">Curriculum Survey</a><br/>
                     <a href="/certificate">Certificates of Completion</a><br/>
+                    <!-- This section lists some additinal resources for teachers, with an explanation of each link provided as a hover text box (reference 2) -->
                     <p>Additional Resources</p>
                     <span class="hovertext" data-hover="The fastest way to transform Google Drive presentations into classroom conversations through student engagement.">
                         <img src="https://lh3.googleusercontent.com/-Y-67Zo3LRZk/XcCGCmV7wqI/AAAAAAAAAAM/bRORc48aq9YnEz1Xxety_iZPUPyxAvB_wCLcBGAsYHQ/s400/icon_square_128x128.png" width="20" height="20"/> <a href="https://www.peardeck.com/googleslides">Pear Deck</a><br/>
@@ -86,22 +101,23 @@
     
             <div class="col-md-6">
                 <div class="profile-head">
-                    <header>Meghan</header> 
+                    <header>{{Auth::user()->name}}</header>
                     <header> 
                         <span>Primary TeDucator</span>
                     </header>
                     <br>
                     <div class="h9">Take the Curriculum Survey to get started!</div>
                     <br>
-                            
-                    <button class="tablink" onclick="openPage('Home', this, 'grey')">Survey Results</button>
-                    <button class="tablink" onclick="openPage('News', this, 'grey')" id="defaultOpen">Training Courses</button>
-                    <button class="tablink" onclick="openPage('Contact', this, 'grey')">Community Page</button>
+                    <!-- This starts the tabs section -->                
+                    <button class="tablink" onclick="openPage('Results', this, 'grey')">Survey Results</button>
+                    <button class="tablink" onclick="openPage('Courses', this, 'grey')" id="defaultOpen">Training Courses</button>
+                    <button class="tablink" onclick="openPage('Community', this, 'grey')">Community Page</button>
                         
-                    <div id="Home" class="tabcontent">
+                    <div id="Results" class="tabcontent">
                     <h3>Below are you survey results!</h3>
                     <p style="text-align: center">(1 being least familar and 7 being an expert)</p>
-                    
+
+                    <!-- This table pulls data from the survey model and survey controller -->                
                     <table class="styled-table">
                         <thead>
                             <tr>
@@ -110,6 +126,7 @@
                             </tr>
                         <thead>
                         <tbody>
+                            <!-- This loop pulls the survey question name and user input result for each question stored in the surveys variable and displays it in a table -->                
                             @foreach ($surveys as $survey)
                             <tr>
                                 <td>{{ $survey->name }}</td>
@@ -121,28 +138,29 @@
                     </table>
                     </div>
 
-                    <div id="News" class="tabcontent">
+                    <div id="Courses" class="tabcontent">
                     <h3>Below are your courses!</h3>
                     <div id="newshead">
                         <p>
                             <span class="gold">Key Stage 1</span><span class="blue">Key Stage 2</span>
                         </p>
                     </div>
+                        <!-- This section defines and provides links for each of the training courses for ks1 and ks2 -->
                         <div class="flex-container">
                             <div class="flex-child magenta">
                                 <h4 class="toprow"> Algorithms </h4>
                                 <p class="coursebody"> In this course, you will learn what algorithms are, how they are implemented as programs on digital devices, and that programs execute by following precise and unambiguous instructions</p>
                                 <button class="course" 
-                                    onclick="window.location.href = '/ks1course';">
+                                    onclick="window.location.href = '/ks1course/Algorithms';">
                                         Start Course
                                 </button>
                             </div>
                             
                             <div class="flex-child green">
                                 <h4 class="toprow2"> Debugging </h4>
-                                <p> In this course, you will learn how to design, write and debug programs that accomplish specific goals, including controlling or simulating physical systems; solve problems by decomposing them into smaller parts</p>
+                                <p class="coursebody"> In this course, you will learn how to design, write and debug programs that accomplish specific goals, including controlling or simulating physical systems; solve problems by decomposing them into smaller parts</p>
                                 <button class="course" 
-                                    onclick="window.location.href = '/ks2course';">
+                                    onclick="window.location.href = '/ks2course/Debugging';">
                                         Start Course
                                 </button>
                             </div>
@@ -151,18 +169,18 @@
                         <div class="flex-container">
                             <div class="flex-child magenta">
                                 <h4 class="toprow"> Programs </h4>
-                                <p> In this course, you will learn how to create and debug simple programs</p>
+                                <p class="coursebody"> In this course, you will learn how to create and debug simple programs</p>
                                 <button class="course" 
-                                    onclick="window.location.href = '/ks1course';">
+                                    onclick="window.location.href = '/ks1course/Programs';">
                                         Start Course
                                 </button>
                             </div>
 
                             <div class="flex-child green">
                                 <h4 class="toprow2"> Variables </h4>
-                                <p> In this course, you will learn how to use sequence, selection, and repetition in programs; work with variables and various forms of input and output </p>
+                                <p class="coursebody"> In this course, you will learn how to use sequence, selection, and repetition in programs; work with variables and various forms of input and output </p>
                                 <button class="course" 
-                                    onclick="window.location.href = '/ks2course';">
+                                    onclick="window.location.href = '/ks2course/Variables';">
                                         Start Course
                                 </button>
                             </div>
@@ -171,18 +189,18 @@
                         <div class="flex-container">
                             <div class="flex-child magenta">
                                 <h4 class="toprow"> Logic </h4>
-                                <p> In this course, you will learn how to use logical reasoning to predict the behaviour of simple programs </p>
+                                <p class="coursebody"> In this course, you will learn how to use logical reasoning to predict the behaviour of simple programs </p>
                                 <button class="course" 
-                                    onclick="window.location.href = '/ks1course';">
+                                    onclick="window.location.href = '/ks1course/Logic';">
                                         Start Course
                                 </button>
                             </div>
 
                             <div class="flex-child green">
                                 <h4 class="toprow2"> Reasoning </h4>
-                                <p> In this course, you will learn how to use logical reasoning to explain how some simple algorithms work and to detect and correct errors in algorithms and programs  </p>
+                                <p class="coursebody"> In this course, you will learn how to use logical reasoning to explain how some simple algorithms work and to detect and correct errors in algorithms and programs  </p>
                                 <button class="course" 
-                                    onclick="window.location.href = '/ks2course';">
+                                    onclick="window.location.href = '/ks2course/Reasoning';">
                                         Start Course
                                 </button>
                             </div>
@@ -191,18 +209,18 @@
                         <div class="flex-container">
                             <div class="flex-child magenta">
                                 <h4 class="toprow"> Purpose </h4>
-                                <p> In this course, you will learn how to use technology purposefully to create, organise, store, manipulate and retrieve digital content </p>
+                                <p class="coursebody"> In this course, you will learn how to use technology purposefully to create, organise, store, manipulate and retrieve digital content </p>
                                 <button class="course" 
-                                    onclick="window.location.href = '/ks1course';">
+                                    onclick="window.location.href = '/ks1course/Purpose';">
                                         Start Course
                                 </button>
                             </div>
 
                             <div class="flex-child green">
                                 <h4 class="toprow2"> Networks </h4>
-                                <p> In this course, you will learn about computer networks including the internet; how they can provide multiple services, such as the world wide web; and the opportunities they offer for communication and collaboration  </p>
+                                <p class="coursebody"> In this course, you will learn about computer networks including the internet; how they can provide multiple services, such as the world wide web; and the opportunities they offer for communication and collaboration  </p>
                                 <button class="course" 
-                                    onclick="window.location.href = '/ks2course';">
+                                    onclick="window.location.href = '/ks2course/Networks';">
                                         Start Course
                                 </button>
                             </div>
@@ -211,18 +229,18 @@
                         <div class="flex-container">
                             <div class="flex-child magenta">
                                 <h4 class="toprow"> Information </h4>
-                                <p> In this course, you will learn how to recognise common uses of information technology beyond school </p>
+                                <p class="coursebody"> In this course, you will learn how to recognise common uses of information technology beyond school </p>
                                 <button class="course" 
-                                    onclick="window.location.href = '/ks2course';">
+                                    onclick="window.location.href = '/ks2course/Information';">
                                         Start Course
                                 </button>
                             </div>
 
                             <div class="flex-child green">
                                 <h4 class="toprow2"> Search </h4>
-                                <p> In this course, you will learn how to use search technologies effectively, appreciate how results are selected and ranked, and be discerning in evaluating digital content</p>
+                                <p class="coursebody"> In this course, you will learn how to use search technologies effectively, appreciate how results are selected and ranked, and be discerning in evaluating digital content</p>
                                 <button class="course" 
-                                    onclick="window.location.href = '/ks1course';">
+                                    onclick="window.location.href = '/ks1course/Search';">
                                         Start Course
                                 </button>
                             </div>
@@ -231,18 +249,18 @@
                         <div class="flex-container">
                             <div class="flex-child magenta">
                                 <h4 class="toprow"> Safety </h4>
-                                <p> In this course, you will learn how to use technology safely and respectfully, keeping personal information private; identify where to go for help and support when they have concerns about content or contact on the internet or other online technologies. </p>
+                                <p class="coursebody"> In this course, you will learn how to use technology safely and respectfully, keeping personal information private; identify where to go for help and support when they have concerns about content or contact on the internet or other online technologies. </p>
                                 <button class="course" 
-                                    onclick="window.location.href = '/ks2course';">
+                                    onclick="window.location.href = '/ks2course/Safety';">
                                         Start Course
                                 </button>
                             </div>
 
                             <div class="flex-child green">
                                 <h4 class="toprow2"> Variety </h4>
-                                <p> In this course, you will learn how to select, use and combine a variety of software (including internet services) on a range of digital devices to design and create a range of programs, systems and content that accomplish given goals, including collecting, analysing, evaluating  and presenting data and information</p>
+                                <p class="coursebody"> In this course, you will learn how to select, use and combine a variety of software (including internet services) on a range of digital devices to design and create a range of programs, systems and content that accomplish given goals, including collecting, analysing, evaluating  and presenting data and information</p>
                                 <button class="course" 
-                                    onclick="window.location.href = '/ks1course';">
+                                    onclick="window.location.href = '/ks1course/Variety';">
                                         Start Course
                                 </button>
                             </div>
@@ -251,7 +269,7 @@
                         <div class="flex-container">
                             <div class="flex-child magenta" id="complete">
                                 <h4 class="toprow3"> You Made It! </h4>
-                                <p> Congratulations on completing your training courses! Challenge yourself to further by taking the Key Stage 1 or Key Stage 2 Computing Quizes to earn your <br>Certificate of Completion!</p>
+                                <p class="coursebody"> Congratulations on completing your training courses! Challenge yourself to further by taking the Key Stage 1 or Key Stage 2 Computing Quizes to earn your <br>Certificate of Completion!</p>
                                 <button class="course"
                                     onclick="window.location.href = '/ks1quiz';">
                                         KS1 Computing Quiz
@@ -265,16 +283,17 @@
 
                             <div class="flex-child green">
                                 <h4 class="toprow2"> Responsible </h4>
-                                <p> In this course, you will learn how to use technology safely, respectfully, and responsibly; recognise acceptable/unacceptable behaviour; identify a range of ways to report concerns about content and contact.</p>
+                                <p class="coursebody"> In this course, you will learn how to use technology safely, respectfully, and responsibly; recognise acceptable/unacceptable behaviour; identify a range of ways to report concerns about content and contact.</p>
                                 <button class="course" 
-                                    onclick="window.location.href = '/ks2course';">
+                                    onclick="window.location.href = '/ks2course/Responsible';">
                                         Start Course
                                 </button>
                             </div>
                         </div>
                     </div>
-                        
-                    <div id="Contact" class="tabcontent">
+
+                     <!-- This section has an embedded twitter feed for the TeDucate Primary account which users can interact with [reference 3] -->
+                    <div id="Community" class="tabcontent">
                     <h3>Community Page</h3>
                     <p>Share your experiences!</p>
                         <a class="twitter-timeline" data-width="470" data-height="600" href="https://twitter.com/SarahAz21203704?ref_src=twsrc%5Etfw">Tweet Your Experiences to TeDucate!</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -283,4 +302,5 @@
             </div>
         </div>
     </div>
+    
 </body>

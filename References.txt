@@ -1,0 +1,5 @@
+Below are the references of some of the coding structure I used to create my application:
+
+[1] https://bootsnipp.com/snippets/K0ZmK    (Profile page design)
+[2] https://sebhastian.com/html-hover-text/ (hover over text feature)
+[3] https://publish.twitter.com/# (embedded twitter feed)

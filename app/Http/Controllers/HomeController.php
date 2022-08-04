@@ -70,4 +70,16 @@ class HomeController extends Controller
          //redirects to the home view with the data stored in the resources array variable
          return view('home',['resources'=>$resources]);
      }
+
+     //This function handles the user profile picture being uploaded to their profile page
+     public function upload(Request $request)
+     {
+        # dd($request->image->getClientOriginalName());   
+             if($request->hasFile('image')){
+            $filename = $request->image->getClientOriginalName();
+            $request->image->storeAs('images',$filename,'public');
+            Auth()->user()->update(['image'=>$filename]);
+        }
+        return redirect()->back();
+    }
  }

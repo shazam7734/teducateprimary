@@ -19,3 +19,4 @@ class survey extends Model
     protected $fillable = ["name", "value"];
     
 }
+
