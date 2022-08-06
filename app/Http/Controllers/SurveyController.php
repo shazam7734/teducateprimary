@@ -12,8 +12,11 @@ class SurveyController extends Controller
 {
     //Function to store the score and question type and save it as a "store" method
     public function store(){
+        //Create a data variable to store all the user input
         $data = request()->all();
+        //Create a score variable to use in the ks1 and ks2course.blade templates
         $score=[];
+        //Create a question variable to store all the questions names that users will answer
         $question=[];
       foreach ($data as $key => $value) {
         

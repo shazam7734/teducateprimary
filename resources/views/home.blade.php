@@ -115,7 +115,7 @@
                         
                     <div id="Results" class="tabcontent">
                     <h3>Below are you survey results!</h3>
-                    <p style="text-align: center">(1 being least familar and 7 being an expert)</p>
+                    <p style="text-align: center">(1 being a beginner and 7 being an expert)</p>
 
                     <!-- This table pulls data from the survey model and survey controller -->                
                     <table class="styled-table">

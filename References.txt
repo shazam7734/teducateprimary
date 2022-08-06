@@ -3,3 +3,6 @@ Below are the references of some of the coding structure I used to create my app
 [1] https://bootsnipp.com/snippets/K0ZmK    (Profile page design)
 [2] https://sebhastian.com/html-hover-text/ (hover over text feature)
 [3] https://publish.twitter.com/# (embedded twitter feed)
+[4] https://community.x10hosting.com/threads/student-use-document-getelementbyid-innerhtml-with-if-else-statement.84815/
+[5] https://linuxhint.com/window-onload-event-in-javascript/#:~:text=JavaScript%20has%20a%20window%20onload,object%20is%20loaded%20in%20HTML.
+[6] https://laravel.com/docs/5.7/blade#displaying-data

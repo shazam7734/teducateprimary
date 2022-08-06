@@ -13,21 +13,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script>
+        //This function will update the training level depending on how the user scored that topic on the curriculum survey [reference 4]
         window.onload = function(){  
-        if ({{$Score}} > 1 && {{$Score}} < 3) {
-            training_level = document.getElementById("training_level");
-            training_level.innerHTML = training_level.innerHTML+" Easy";
-        }
-        else if ({{$Score}} > 2 && {{$Score}} < 6) {
-            training_level = document.getElementById("training_level");
-            training_level.innerHTML = training_level.innerHTML+" Intermediate";
+            if ({{$Score}} > 1 && {{$Score}} < 3) {
+                training_level = document.getElementById("training_level");
+                training_level.innerHTML = training_level.innerHTML+" Easy";
+            }
+            else if ({{$Score}} > 2 && {{$Score}} < 6) {
+                training_level = document.getElementById("training_level");
+                training_level.innerHTML = training_level.innerHTML+" Intermediate";
 
-        }
-        else {
-            training_level = document.getElementById("training_level");
-            training_level.innerHTML = training_level.innerHTML+" Advanced";
+            }
+            else {
+                training_level = document.getElementById("training_level");
+                training_level.innerHTML = training_level.innerHTML+" Advanced";
 
-        }
+            }
         }
         function get_Details_By_Year() {
             year_value= document.getElementById("ks2group").value;
@@ -99,15 +100,15 @@
 <body>
     <h1> Please select your year group</h1>
         
-            <label for="ks2group">Year Group:</label>
-            <select id="ks2group" name="ygroup">
-                <option value="ygroup">Year Group</option>
-                <option value="3">Year 3</option>
-                <option value="4">Year 4</option>
-                <option value="5">Year 5</option>
-                <option value="6">Year 6</option>
-            </select>
-            <input type="submit" onclick="get_Details_By_Year();">
+        <label for="ks2group">Year Group:</label>
+        <select id="ks2group" name="ygroup">
+            <option value="ygroup">Year Group</option>
+            <option value="3">Year 3</option>
+            <option value="4">Year 4</option>
+            <option value="5">Year 5</option>
+            <option value="6">Year 6</option>
+        </select>
+        <input type="submit" onclick="get_Details_By_Year();">
         
     <h1> Training Course: {{ $topic_name }}</h1>
     <h1> Survey Score: {{ $Score }}</h1>
