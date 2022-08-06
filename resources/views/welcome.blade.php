@@ -101,10 +101,10 @@
                 to a different year group! </p>
             <h6>The TeDucation Community </h6>
             <p>It is important here at TeDucate that we constantly take your, our fellow TeDucator, feedback to improve and provide for you the resources you 
-                need to succeed. The TeDucation Community page is a prime example of how we included a feature based on direct feedback from our users! 
+                need to succeed. The TeDucation Community page is a Twitter account created by us for our fellow TeDucators to share your experiences while using our site. 
                 Within this page, you can post, comment, share and like posts made by your fellow TeDucators on lesson plans they've done, dusted and shared
-                with the TeDucation Community. You can see prime examples of how other teachers have done a computing lesson, with examples of students work
-                and any other tips and tricks they've shared. Feel free to post a blog of your own each time you complete a computing lesson! The more likes you 
+                with the TeDucation Community. You can see prime examples of how other teachers have implemented a computing lesson, with examples of students work
+                and any other tips and tricks they've shared. Feel free to add a Tweet of your own each time you complete a computing lesson! The more likes you 
                 get, the more prizes you win! 
 
             
@@ -171,7 +171,7 @@
             <div class="container" id="img12">
                 <img src="https://icon-library.com/images/people-talking-icon-png/people-talking-icon-png-18.jpg" class="image" style="border-radius: 50%">
                 <div class="middle">
-                    <div class="text">Step 5: Share your experience on the <a href="/community">TeDucation Community</a> page to earn likes, comments, points and rewards!</div>
+                    <div class="text">Step 5: Share your experience on the <a href="https://twitter.com/SarahAz21203704?ref_src=twsrc%5Etfw">TeDucation Community</a> page to earn likes, comments, points and rewards!</div>
                 </div>
             </div>
 

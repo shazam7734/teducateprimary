@@ -103,7 +103,6 @@
                     child= tutorials.lastElementChild;
                 }
             }
-            
         </script>
     </head>
 
