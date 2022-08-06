@@ -37,7 +37,7 @@
                 }
             }
             
-            //This function will create the dymanic training course depending on the year group the user clicks on from the dropdown menu
+            //This function will create the dymanic training course depending on the survey score the user gave this topic and the year group the user clicks on from the dropdown menu
             function get_Details_By_Year() {
                 var year_value= document.getElementById("ks1group").value;
                 var tutorials = document.getElementById("tutorials");
@@ -83,6 +83,7 @@
 
                 }
             }
+            //This function will create links to all the resources found in the resources table in the database once the user selects a year group
             function createLink(text, link) {
                 var a = document.createElement('a');
                 var innerText = document.createTextNode(text);
@@ -107,6 +108,7 @@
     </head>
 
     <body>
+        <!-- This section will implement the laravel presets of logging out along with my own personal touches -->
         <div class="header" style="margin-left:2px">
             <div class ="logo">
                 <a href="{{ url('/') }}" class="logo">
@@ -125,18 +127,20 @@
             </video>
             <div class="main">
                 <br><br>
+                <!-- This section will implement the JavaScript function pulling the topic name of the training course -->
                 <h1>Training Course: {{ $topic_name }}</h1><br>
                 <p>Welcome to your personalised training course! Please select your year group to get started:</p>
             </div>
                 <div class="row">
+                    <!-- This section will implement the JavaScript function of displaying the user's survey score of this particular topic -->
                     <div class="column">
                         <h2 class="decor"> Survey Score: {{ $Score }}</h2>
                     </div>
-                    
+                    <!-- This section will implement the JavaScript function of displaying the training level using the user's survey score of this particular topic -->
                     <div class="column">
                         <h2 name="Training_level" id="training_level" class="decor"> Training Level:</h2>
                     </div>
-                    
+                    <!-- This section will implement the JavaScript function which enables the user to filter the resources by year group -->
                     <div class="column">
                         
                         <label for="ks1group"></label>
@@ -149,7 +153,7 @@
                     </div>
                 </div>
         </div>
-
+        <!-- This section will implement the JavaScript function of pulling the resources from the database -->
         <div id="section2">
 
             <div class="row">
@@ -178,6 +182,10 @@
                 </div>     
             </div>
         </div>
-
+        <!-- Display video at the foot of the page -->
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="https://player.vimeo.com/external/372334720.sd.mp4?s=3b94e2d48b5844adcda82889e4809589de5d9172&profile_id=164&oauth2_token_id=57447761" type="video/mp4" />
+            </video>
     </body>
 </html>
