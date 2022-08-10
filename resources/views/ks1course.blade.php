@@ -108,18 +108,28 @@
     </head>
 
     <body>
-        <!-- This section will implement the laravel presets of logging out along with my own personal touches -->
-        <div class="header" style="margin-left:2px">
+    <!-- This extends the banner section with the logo and relavent tablinks -->
+        <div class="header">
             <div class ="logo">
                 <a href="{{ url('/') }}" class="logo">
-                    <img src="https://i.ibb.co/HP9xhP8/logo-banner.jpg" width="80" height="50"> Empowering You
+                    <img src="https://i.ibb.co/HP9xhP8/logo-banner.jpg" width="90" height="50"> Empowering You
                 </a>
             </div>
-            <div class="header-right">
-                <a href="http://127.0.0.1:8000/home">Home - </a>
-                <a href="{{ route('logout') }}">Logout</a>
+            <div class="header-right" style="font-weight:bold">
+                <a href="http://127.0.0.1:8000/home">Profile - </a>
+                <a href="http://127.0.0.1:8000/#section3">Our Mission - </a>
+                <a href="http://127.0.0.1:8000/#section4">Why TeDucate - </a>
+                <a href="http://127.0.0.1:8000/#section5">Getting Started -</a>
+                <a href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                        document.getElementById('logout-form').submit();"> {{ __('Logout') }}</a>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                    @csrf
+                </form>
+                    
+
             </div>
         </div>
+
 
         <div class="video-container" id="section1">
             <video autoplay muted loop>

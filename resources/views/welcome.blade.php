@@ -13,9 +13,8 @@
     <body class="antialiased">
         <div class="menu">
             @if (Route::has('login'))
-                <div>
+                <div style="margin-left: 10px">
                     @auth
-                        <a href="{{ url('/home') }}" class="nav">Home</a>
                     @else
                         <a href="{{ route('login') }}" class="nav">Log in</a>
 

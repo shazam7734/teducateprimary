@@ -10,6 +10,16 @@ use App\Http\Controllers\Controller;
 
 class ResourcesController extends Controller
 {
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     // function that establishing connection between survey results and resources table
     public function resources()
     {
@@ -73,7 +83,7 @@ class ResourcesController extends Controller
     public function ks2_resources(Request $request)
     {
         //need the same surveys function saved in the survey variable to use in the next step
-        $user_id=\Auth::user()->id;
+        $user_id=\Auth::user()->id; 
         $topic_name=strtolower($request->name);
         $surveys = DB::table('surveys')
             ->select('value')

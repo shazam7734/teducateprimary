@@ -8,6 +8,7 @@ html {
     }
 
     #section1 {
+    margin-left:10px;
     height: 350px;
     background-image:
     url('https://i.postimg.cc/hScyRgMc/logo-v4.jpg');
@@ -22,7 +23,7 @@ html {
         background-image:
         url('https://i.pinimg.com/originals/f7/1a/af/f71aaf6925ab5b8700f9b959cd1e2a23.jpg');
         background-size: 100%;
-        margin-top: 120px;
+        margin-top: 118px;
     }
 
     #section4 {
@@ -640,14 +641,14 @@ body {
 }
 
 .header {
-  overflow: hidden;
-  background: url("https://image.shutterstock.com/image-vector/abstract-technology-concept-grey-web-260nw-619785029.jpg"); no repeat
-  center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding: 20px 10px;
+    overflow: hidden;
+    background: url("https://image.shutterstock.com/image-vector/abstract-technology-concept-grey-web-260nw-619785029.jpg"); no repeat
+    center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 20px 10px;
   
 }
 
@@ -887,3 +888,54 @@ p.yeargroup {
     from {opacity: 0;}
     to {opacity:1 ;}
   }
+
+
+.surveycontainer {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 30px;
+}
+  
+  
+  .btn {
+    text-decoration: none;
+    border: 1px solid rgb(146, 148, 248);
+    position: relative;
+    overflow: hidden;
+    background-image: url(
+        'https://i.ibb.co/MMtr7jD/button.jpg');
+    background-size: cover;
+    width: 400px;
+    height: 40px;
+    font-size: 18px;
+    font-family: "Trirong", serif;
+  }
+  
+  .btn:hover {
+    box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+  }
+  
+  .btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(146, 148, 248, 0.4),
+      transparent
+    );
+    transition: all 650ms;
+  }
+  
+  .btn:hover:before {
+    left: 100%;
+  }
+
+
+
+  

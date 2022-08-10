@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script>
@@ -41,10 +42,10 @@
     <div class="header">
         <div class ="logo">
             <a href="{{ url('/') }}" class="logo">
-                <img src="https://i.ibb.co/HP9xhP8/logo-banner.jpg" width="80" height="50"> Empowering You
+                <img src="https://i.ibb.co/HP9xhP8/logo-banner.jpg" width="90" height="50"> Empowering You
             </a>
         </div>
-        <div class="header-right">
+        <div class="header-right" style="font-weight:bold">
             <a href="http://127.0.0.1:8000/#section3">Our Mission - </a>
             <a href="http://127.0.0.1:8000/#section4">Why TeDucate - </a>
             <a href="http://127.0.0.1:8000/#section5">Getting Started -</a>
@@ -67,17 +68,16 @@
                     <div class="profile-img">
                         <img src="{{asset('/storage/images/'.Auth::user()->image)}}" alt=""/>
                         <div class="file btn btn-lg btn-primary">
-                            Change Profile 
-                            <input type="submit" value="Submit">
+                            <input type="submit" value="Submit" style="width: 220px">Update</input>
                         </div>
-                        <input type="file" value="File Upload" name="image"/>
+                        <input style="margin-left: 55px" type="file" value="File Upload" name="image"/>
                 </div>
                     </form>
 
                 <div class="profile-work">
                     <p>Computing Curriculum Links</p>
                     <a href="/curriculum">Curriculum Explained</a><br/>
-                    <a href="/survey" style="color: red">Curriculum Survey</a><br/>
+                    <a href="/survey">Curriculum Survey</a><br/>
                     <a href="/certificate">Certificates of Completion</a><br/>
                     <!-- This section lists some additinal resources for teachers, with an explanation of each link provided as a hover text box (reference 2) -->
                     <p>Additional Resources</p>
@@ -105,40 +105,18 @@
                     <header> 
                         <span>Primary TeDucator</span>
                     </header>
-                    <br>
-                    <div class="h9">Take the Curriculum Survey to get started!</div>
+                    <br><br>
+                    
+                    <div class="surveycontainer">
+                        <a href="/survey" class="btn" style="font-weight:bold">Take the Curriculum Survey to get started!</a>
+                    </div>
                     <br>
                     <!-- This starts the tabs section -->                
-                    <button class="tablink" onclick="openPage('Results', this, 'grey')">Survey Results</button>
-                    <button class="tablink" onclick="openPage('Courses', this, 'grey')" id="defaultOpen">Training Courses</button>
+                    <button class="tablink" onclick="openPage('Results', this, 'grey')">Training Programs</button>
+                    <button class="tablink" onclick="openPage('Courses', this, 'grey')" id="defaultOpen">Progress</button>
                     <button class="tablink" onclick="openPage('Community', this, 'grey')">Community Page</button>
                         
                     <div id="Results" class="tabcontent">
-                    <h3>Below are you survey results!</h3>
-                    <p style="text-align: center">(1 being a beginner and 7 being an expert)</p>
-
-                    <!-- This table pulls data from the survey model and survey controller -->                
-                    <table class="styled-table">
-                        <thead>
-                            <tr>
-                                <td>Teaching Point</td>
-                                <td>Survey Result</td>
-                            </tr>
-                        <thead>
-                        <tbody>
-                            <!-- This loop pulls the survey question name and user input result for each question stored in the surveys variable and displays it in a table -->                
-                            @foreach ($surveys as $survey)
-                            <tr>
-                                <td>{{ $survey->name }}</td>
-                                <td>{{ $survey->value }}</td>
-                            </tr>
-                            @endforeach
-                        </tbody>
-                        </tbody>
-                    </table>
-                    </div>
-
-                    <div id="Courses" class="tabcontent">
                     <h3>Below are your courses!</h3>
                     <div id="newshead">
                         <p>
@@ -292,11 +270,87 @@
                         </div>
                     </div>
 
+                    <div id="Courses" class="tabcontent">
+                    
+                    <h3>Below is the progress you've made in each of your training programs!</h3>
+
+                    <!-- This table holds dummy data which will be implemented in future work -->                
+                    <table class="styled-table" style="width:100%">
+                        <thead>
+                            <tr>
+                                <td style="width:50%">KS1 Training Program</td>
+                                <td>Progress</td>
+                            </tr>
+                        <thead>
+                        <tbody>
+                            <tr>
+                                <td>KS1 Algorithms</td>
+                                <td><img src="https://i.ibb.co/9GByMWT/bar1.jpg" style="width: 50%; margin-left: 50px"></td>
+                            </tr>
+                                <td>KS1 Programs</td>
+                                <td><img src="https://i.ibb.co/8zTpLqd/bar2.jpg" style="width: 50%; margin-left: 50px"></td>
+                            </tr>
+                                <td>KS1 Logic</td>
+                                <td><img src="https://i.ibb.co/9GByMWT/bar1.jpg" style="width: 50%; margin-left: 50px"></td>
+                            </tr>
+                            <tr>
+                                <td>KS1 Purpose</td>
+                                <td><img src="https://i.ibb.co/N9yw5Y9/bar3.jpg" style="width: 50%; margin-left: 50px"></td>
+                            </tr>
+                                <td>KS1 Information</td>
+                                <td><img src="https://i.ibb.co/9GByMWT/bar1.jpg" style="width: 50%; margin-left: 50px"></td>
+                            </tr>
+                                <td>KS1 Saftey</td>
+                                <td><img src="https://i.ibb.co/8zTpLqd/bar2.jpg" style="width: 50%; margin-left: 50px"></td>
+                            </tr>
+                        </tbody>
+                        <thead>
+                            <tr>
+                                <td style="width:50%">KS2 Training Program</td>
+                                <td>Progress</td>
+                            </tr>
+                        <thead>
+                        <tbody>
+                            <tr>
+                                <td>KS2 Debugging</td>
+                                <td><img src="https://i.ibb.co/8zTpLqd/bar2.jpg" style="width: 50%; margin-left: 50px"></td>
+                            </tr>
+                                <td>KS2 Variables</td>
+                                <td><img src="https://i.ibb.co/N9yw5Y9/bar3.jpg" style="width: 50%; margin-left: 50px"></td>
+                            </tr>
+                                <td>KS2 Reasoning</td>
+                                <td><img src="https://i.ibb.co/9GByMWT/bar1.jpg" style="width: 50%; margin-left: 50px"></td>
+                            </tr>
+                            </tr>
+                                <td>KS2 Networks</td>
+                                <td><img src="https://i.ibb.co/9GByMWT/bar1.jpg" style="width: 50%; margin-left: 50px"></td>
+                            </tr>
+                            </tr>
+                                <td>KS2 Search</td>
+                                <td><img src="https://i.ibb.co/N9yw5Y9/bar3.jpg" style="width: 50%; margin-left: 50px"></td>
+                            </tr>
+                            </tr>
+                                <td>KS2 Variety</td>
+                                <td><img src="https://i.ibb.co/8zTpLqd/bar2.jpg" style="width: 50%; margin-left: 50px"></td>
+                            </tr>
+                            </tr>
+                                <td>KS2 Responsible</td>
+                                <td><img src="https://i.ibb.co/9GByMWT/bar1.jpg" style="width: 50%; margin-left: 50px"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    </div>
+
                      <!-- This section has an embedded twitter feed for the TeDucate Primary account which users can interact with [reference 3] -->
                     <div id="Community" class="tabcontent">
                     <h3>Community Page</h3>
-                    <p>Share your experiences!</p>
+                    <p>Keep up to date with everything TeDucate Primary has to offer by following our Tweets!</p>
                         <a class="twitter-timeline" data-width="470" data-height="600" href="https://twitter.com/SarahAz21203704?ref_src=twsrc%5Etfw">Tweet Your Experiences to TeDucate!</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <br><br>
+                    <h3>Share Your Experiences!</h3>
+                    <p>Use the <strong>#teducateprimary</strong> hashtag in your tweet to share your experiences with our community of TeDucators!</p>
+                        <div class="taggbox" style="width:100%;height:100%; background-color:white" data-widget-id="104206" data-tags="false"></div><script src="https://widget.taggbox.com/embed-lite.min.js" type="text/javascript"></script>
                     </div>
                 </div>
             </div>
