@@ -15,6 +15,7 @@
             @if (Route::has('login'))
                 <div style="margin-left: 10px">
                     @auth
+                        <a href="{{ url('/home') }}" class="nav">Profile</a>
                     @else
                         <a href="{{ route('login') }}" class="nav">Log in</a>
 

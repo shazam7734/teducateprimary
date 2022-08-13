@@ -34,9 +34,9 @@ html {
     }
 
     #section2 {
-        height: 850px;
+        height: 1200px;
         background-image:
-        url('https://i.postimg.cc/ZKJtvHS3/training-background.png');
+        url('https://i.postimg.cc/W3k93fjz/training-background.png');
         background-size: 100%;
     }
 
@@ -289,3 +289,40 @@ header {
     object-fit: fill;
     overflow: hidden;
   }
+
+  a {
+    color: silver;
+    text-decoration: underline;
+  }
+
+.share {
+  font-size: large;
+  text-align: center;
+  margin-top: 40px;
+  border-color: white;
+  border-style: ridge;
+  border-width: 10px;
+  padding:2px;
+  height:300px;
+  margin-left:500px;
+  margin-right:500px;
+  font-family: open-sans;
+  font-size: 20px;
+  color: white;
+  overflow: hidden;
+  background: url("https://browsecat.net/sites/default/files/twitter-logo-wallpapers-123384-1046261-2459381.png"); no repeat
+    center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 20px 10px;
+}
+
+.sharetitle {
+  font-size: x-large;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size:30px;
+}

@@ -69,6 +69,10 @@ Route::get('/certificate', function () {
     return view('certificate');
 });
 
+Route::get('/feedback', function () {
+    return view('feedback');
+});
+
 Route::view('form','userview');
 Route::post('submit','Companies@save');
 //Maps the surveycontroller and establishes a route for when the user submits the survey form

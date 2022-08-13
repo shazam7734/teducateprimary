@@ -15,7 +15,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-
+        
         <script>
 
             //This function will update the training level depending on how the user scored that topic on the curriculum survey [reference 4 & 5]
@@ -115,7 +115,7 @@
                     <img src="https://i.ibb.co/HP9xhP8/logo-banner.jpg" width="90" height="50"> Empowering You
                 </a>
             </div>
-            <div class="header-right" style="font-weight:bold">
+            <div class="header-right" style="font-weight:bold; border: black">
                 <a href="http://127.0.0.1:8000/home">Profile - </a>
                 <a href="http://127.0.0.1:8000/#section3">Our Mission - </a>
                 <a href="http://127.0.0.1:8000/#section4">Why TeDucate - </a>
@@ -191,11 +191,21 @@
                     <h3 id="lesson_plan" class="palign" style="margin-right: 250px">Please select a year group</h3>
                 </div>     
             </div>
+            <div class="share">
+                <p class="sharetitle" style="color:white">Share Your Experience</p>
+                <hr class="line">
+                <p>Share your experiences on Twitter using the <a href="https://twitter.com/login">#teducateprimary</a> hashtag for your chance to win!</P>
+                <hr class="line2">
+                <P>Visit the Community Page from <br> your <a href="http://127.0.0.1:8000/home">Profile</a> to learn more</p>
+            </div>
         </div>
+       
         <!-- Display video at the foot of the page -->
         <div class="video-container">
             <video autoplay muted loop>
                 <source src="https://player.vimeo.com/external/372334720.sd.mp4?s=3b94e2d48b5844adcda82889e4809589de5d9172&profile_id=164&oauth2_token_id=57447761" type="video/mp4" />
             </video>
+        
+        
     </body>
 </html>

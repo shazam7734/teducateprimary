@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 
     <script>
         //This function controlls the tabs and reveals the correct content under each tab on user click [reference 1]
@@ -58,6 +61,7 @@
 
         </div>
     </div>
+    
 
     <!-- This extends the profile page content section, devided into two columns (col-md-4 and col-md-6) -->                
     <div class="container emp-profile">
@@ -101,16 +105,16 @@
     
             <div class="col-md-6">
                 <div class="profile-head">
-                    <header>{{Auth::user()->name}}</header>
+                    <header style="color: teal; font-size: xx-large; font-weight:bold">{{Auth::user()->name}}</header>
                     <header> 
                         <span>Primary TeDucator</span>
                     </header>
                     <br><br>
-                    
-                    <div class="surveycontainer">
-                        <a href="/survey" class="btn" style="font-weight:bold">Take the Curriculum Survey to get started!</a>
-                    </div>
-                    <br>
+                    <p class="surveytitle">Take the Computing Curriculum Survey to get started:</p>
+                    <a href="/survey">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlLK4FBz3oQQT1fL-pjIA22ViUZTFOCKw9mr1d9qZP6S6tHUPizTd4_ndx2owG6VTAryc&usqp=CAU" alt="survey" class="sbtn">
+                    </a>
+                    <br><br>
                     <!-- This starts the tabs section -->                
                     <button class="tablink" onclick="openPage('Results', this, 'grey')">Training Programs</button>
                     <button class="tablink" onclick="openPage('Courses', this, 'grey')" id="defaultOpen">Progress</button>
@@ -345,16 +349,37 @@
                      <!-- This section has an embedded twitter feed for the TeDucate Primary account which users can interact with [reference 3] -->
                     <div id="Community" class="tabcontent">
                     <h3>Community Page</h3>
-                    <p>Keep up to date with everything TeDucate Primary has to offer by following our Tweets!</p>
+                    <p>Keep up to date with everything TeDucate Primary has to offer by following our Tweets, including the monthly reward announcement for the teducator whose Tweet received the most likes!</p>
                         <a class="twitter-timeline" data-width="470" data-height="600" href="https://twitter.com/SarahAz21203704?ref_src=twsrc%5Etfw">Tweet Your Experiences to TeDucate!</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     <br><br>
                     <h3>Share Your Experiences!</h3>
                     <p>Use the <strong>#teducateprimary</strong> hashtag in your tweet to share your experiences with our community of TeDucators!</p>
+                    <p><a href="https://twitter.com/login" style="color: rgb(183, 247, 255); font-weight: bold; margin-left: 160px; font-size: large; text-decoration: underline">Add A Tweet!</a></p>
                         <div class="taggbox" style="width:100%;height:100%; background-color:white" data-widget-id="104206" data-tags="false"></div><script src="https://widget.taggbox.com/embed-lite.min.js" type="text/javascript"></script>
+                    <p style="text-align: right">via #taggbox</p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="#"><i class="icon ion-social-instagram"></i></a>
+                <a href="#"><i class="icon ion-social-snapchat"></i></a>
+                <a href="#"><i class="icon ion-social-twitter"></i></a>
+                <a href="#"><i class="icon ion-social-facebook"></i></a>
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="http://127.0.0.1:8000/">Home</a></li>
+                <li class="list-inline-item"><a href="/feedback">Feedback</a></li>
+                <li class="list-inline-item"><a href="/about">About</a></li>
+                <li class="list-inline-item"><a href="#">Resources</a></li>
+                <li class="list-inline-item"><a href="#">Reviews</a></li>
+            </ul>
+            <p class="copyright">TeDucate Primary © 2022</p>
+        </footer>
     </div>
     
 </body>

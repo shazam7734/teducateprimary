@@ -443,7 +443,7 @@ html {
 
 
 body {
-    background: url('https://thumbs.dreamstime.com/b/flat-lay-top-view-office-table-desk-workspace-notebook-c-flat-lay-top-view-office-table-desk-workspace-notebook-computer-124304203.jpg') no-repeat 
+    background: url('https://wallpaperaccess.com/full/1159274.jpg') no-repeat 
     center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -891,51 +891,100 @@ p.yeargroup {
 
 
 .surveycontainer {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin-left: 30px;
+    
 }
   
   
-  .btn {
-    text-decoration: none;
-    border: 1px solid rgb(146, 148, 248);
-    position: relative;
-    overflow: hidden;
-    background-image: url(
-        'https://i.ibb.co/MMtr7jD/button.jpg');
-    background-size: cover;
-    width: 400px;
-    height: 40px;
-    font-size: 18px;
-    font-family: "Trirong", serif;
+  .sbtn {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    position:relative;
+    top:0px;
+    right:-200px;
+    box-shadow: 6px 5px black;
   }
   
-  .btn:hover {
-    box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
-  }
-  
-  .btn:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
+
+.surveytitle {
+    font-size:x-large;
+    font-weight: bold;
+    font-family:'Lobster';
+}
+
+
+
+ .footer-basic {
+    padding:40px 0;
+    position:relative;
+    height:200px;
+    bottom: -200px;
     width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      120deg,
-      transparent,
-      rgba(146, 148, 248, 0.4),
-      transparent
-    );
-    transition: all 650ms;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    background: url("https://image.shutterstock.com/image-vector/glowing-techno-abstract-background-black-260nw-552302281.jpg"); no repeat
+    center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 20px 10px;
   }
   
-  .btn:hover:before {
-    left: 100%;
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
   }
-
-
-
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
+  
+  /* Credit to https://epicbootstrap.com/snippets/footer-basic */
   

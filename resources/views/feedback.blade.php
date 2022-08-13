@@ -41,7 +41,7 @@
         </div>
     </div>
 
-    <h1>This page is under construction. It will display the computing curriculum points as defined by <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/239033/PRIMARY_national_curriculum_-_Computing.pdf">The Department of Education</a>
-    with an easy to understand explanation with examples under each one. Images and videos will also be added for further clarity. Example images below:</h1>
+    <h1>This page is under construction. A plugin by <a href="https://help.disqus.com/en/articles/1717053-what-is-disqus">Disqus</a> is being researched
+    which will allow users to communicate with each other and with the application developer through discussion forums. Example images below:</h1>
 
-    <img src="http://computinginprimaryschool.weebly.com/uploads/9/2/6/2/92629614/ks1-1_orig.png" width="700" height="400" style="margin-left:420px">
+    <img src="https://downloads.intercomcdn.com/i/o/52810050/dbf9c0151e86ce4e8d17a1fa/upload_11915588795736874145.png" width="1400" height="500" style="margin-left:70px">

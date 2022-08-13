@@ -186,8 +186,14 @@
                     <h3 id="lesson_plan" class="palign" style="margin-right: 250px">Please select a year group</h3>
                 </div>     
             </div>
+            <div class="share">
+                <p class="sharetitle" style="color:white">Share Your Experience</p>
+                <hr class="line">
+                <p>Share your experiences on Twitter using the <a href="https://twitter.com/login">#teducateprimary</a> hashtag for your chance to win!</P>
+                <hr class="line2">
+                <P>Visit the Community Page from <br> your <a href="http://127.0.0.1:8000/home">Profile</a> to learn more</p>
+            </div>
         </div>
-
         <div class="video-container">
             <video autoplay muted loop>
                 <source src="https://player.vimeo.com/external/372335193.sd.mp4?s=80151fa22b2eba81883c8641f2c9e493762c7357&profile_id=164&oauth2_token_id=57447761" type="video/mp4" />

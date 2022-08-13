@@ -74,12 +74,22 @@ class ResourcesController extends Controller
             ->get();
         array_push($resources,$result);
         }
-
-        #$surveys[0]->value=7;
-        #dd($resources);
-        //redirects to the home view with the data stored in the surveys variable
-        return view('ks1course',['resources'=>$resources,'topic_name'=>$topic_name,'Score'=>$surveys[0]->value]);
+                
+        //This function checks to see if the user has taken the survey. If the user hasn't taken the survey, the value inside the surveys variable will be 0
+        if(count($surveys)==0){
+            //if the value is 0, it will alert the user to take the survey first
+            echo "<script>";
+            echo "alert('Please take the Curriculam Survey to get started.');";
+            echo "</script>";
+            //and take the user directly to the survey page
+            return view('survey');
+        }
+        //if the user has already taken the survey, the ks1 training course page will load
+        else{
+         return view('ks1course',['resources'=>$resources,'topic_name'=>$topic_name,'Score'=>$surveys[0]->value]);
+        }
     }
+
     public function ks2_resources(Request $request)
     {
         //need the same surveys function saved in the survey variable to use in the next step
@@ -92,6 +102,7 @@ class ResourcesController extends Controller
             ->orderBy('updated_at', 'DESC')
             ->limit(1)
             ->get();
+
 
         //Pulling data from the resources table based on the survey results above and saving in an array
         $resources=array();
@@ -106,10 +117,19 @@ class ResourcesController extends Controller
                 ->get();
             array_push($resources,$result);
         }
-       # dd($resources);
-        #$surveys[0]->value=7;
-        #dd($resources);
-        //redirects to the home view with the data stored in the surveys variable
-        return view('ks2course',['resources'=>$resources,'topic_name'=>$topic_name,'Score'=>$surveys[0]->value]);
+        //This function checks to see if the user has taken the survey. If the user hasn't taken the survey, the value inside the surveys variable will be 0
+        if(count($surveys)==0){
+            //if the value is 0, it will alert the user to take the survey first
+            echo "<script>";
+             echo "alert('Please take the Curriculam Survey to get started.');";
+             echo "</script>";
+             //and take the user directly to the survey page
+             return view('survey');
+         }
+        //if the user has already taken the survey, the ks2 training course page will load
+         else{
+         return view('ks2course',['resources'=>$resources,'topic_name'=>$topic_name,'Score'=>$surveys[0]->value]);
+             }
+ 
     }
 }
