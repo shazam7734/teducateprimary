@@ -39,7 +39,7 @@
             
             //This function will create the dymanic training course depending on the survey score the user gave this topic and the year group the user clicks on from the dropdown menu
             function get_Details_By_Year() {
-                var year_value= document.getElementById("ks1group").value;
+                year_value= document.getElementById("ks1group").value;
                 var tutorials = document.getElementById("tutorials");
                 var instructions = document.getElementById("instructions");
                 var lesson_plan = document.getElementById("lesson_plan");
@@ -50,39 +50,49 @@
                 tutorials.innerHTML = "Tutorials";
                 instructions.innerHTML="Instructions";
                 lesson_plan.innerHTML="Lesson Plan";
-                //Laravel method to pass the array stored in the resources variable to this view template (Reference 6)
                 var resources = @json($resources);
-                //The resources table will have some null values depending on the training level, so this statement will only display the cells which are not empty
                 if (resources != null) {
                     for (var resource in resources[0]) {
-                        //comparing the user input value with the value stored in the resources database
                         if (resources[0][resource]["year"] == year_value) {
-                            //Create an element to start appending the training course links to, separated with a horizontal line "hr" (Reference )
-                            tutorials.appendChild(document.createElement("hr")) ;
-                            //Create a variable to start appending all the links for the training course
-                            var a = createLink("Tutorial1", resources[0][resource]["tutorial1"]);
-                            tutorials.appendChild(a);
-                            tutorials.appendChild(document.createElement("hr")) ;
-                            a = createLink("Tutorial2", resources[0][resource]["tutorial2"]);
-                            tutorials.appendChild(a);
-                            tutorials.appendChild(document.createElement("hr")) ;
-                            a = createLink("Tutorial3", resources[0][resource]["tutorial3"]);
-                            tutorials.appendChild(a);
-                            tutorials.appendChild(document.createElement("hr"));
-                            a = createLink("Primary Instructions", resources[0][resource]["primary_instructions"]);
-                            instructions.appendChild(document.createElement("hr"));
-                            instructions.appendChild(a);
-                            instructions.appendChild(document.createElement("hr"));
-                            a = createLink("Secondary Instructions", resources[0][resource]["secondary_instructions"]);
-                            instructions.appendChild(a);
-                            a = createLink("Lesson Plan", resources[0][resource]["lesson"]);
-                            lesson_plan.appendChild(document.createElement("hr"));
-                            lesson_plan.appendChild(a);                       
-                        } 
+                        
+                            if(resources[0][resource]["tutorial1"]!=""){
+                                tutorials.appendChild(document.createElement("hr")) ;
+                                var a = createLink("Tutorial1", resources[0][resource]["tutorial1"]);
+                                tutorials.appendChild(a);
+                                tutorials.appendChild(document.createElement("hr")) ;
+                            }
+                            if(resources[0][resource]["tutorial2"]!=""){
+                                var a = createLink("Tutorial2", resources[0][resource]["tutorial2"]);
+                                tutorials.appendChild(a);
+                                tutorials.appendChild(document.createElement("hr")) ;
+                                }
+                            if(resources[0][resource]["tutorial3"]!=""){
+                                var a = createLink("Tutorial3", resources[0][resource]["tutorial3"]);
+                                tutorials.appendChild(a);
+                                tutorials.appendChild(document.createElement("hr"));
+                            }
+                            if(resources[0][resource]["primary_instructions"]!=""){
+                                var a = createLink("Primary Instructions", resources[0][resource]["primary_instructions"]);
+                                instructions.appendChild(document.createElement("hr"));
+                                instructions.appendChild(a);
+                                instructions.appendChild(document.createElement("hr"));
+                            }
+                            if(resources[0][resource]["secondary_instructions"]!=""){
+                                var a = createLink("Secondary Instructions", resources[0][resource]["secondary_instructions"]);
+                                instructions.appendChild(a);
+                            }
+                            if(resources[0][resource]["lesson"]!=""){
+                                var a = createLink("Lesson Plan", resources[0][resource]["lesson"]);
+                                lesson_plan.appendChild(document.createElement("hr"));
+                                lesson_plan.appendChild(a);
+                            }                    
+                        
+                        }
                     }
 
                 }
             }
+        
             //This function will create links to all the resources found in the resources table in the database once the user selects a year group
             function createLink(text, link) {
                 var a = document.createElement('a');
