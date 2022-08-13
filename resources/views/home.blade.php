@@ -64,7 +64,7 @@
     
 
     <!-- This extends the profile page content section, devided into two columns (col-md-4 and col-md-6) -->                
-    <div class="container emp-profile">
+    <div class="container emp-profile" style="border-width: 136px; border: solid grey; border-style: double;">
         <div class="row">
             <div class="col-md-4">
                 <form action="{{route('home')}}" method="POST" enctype="multipart/form-data">
@@ -99,7 +99,10 @@
                     </span>
                     <span class="hovertext" data-hover="Computing Curriculum planning templates for each year group, populated with the age-appropriate progression statements and assessments!">
                         <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/hvdbkhja4kca3ip5hwzr" width="20" height="20"/> <a href="https://theictservice.org.uk/primary-computing-curriculum/class-teacher-hub/">The ICT Service</a><br/>
-                    </span>    
+                    </span>
+                    <span class="hovertext" data-hover="Complete computing teaching units for Key Stage 2, free to use!">
+                        <img src="https://uploads-ssl.webflow.com/5f6161c67969a566d2653639/6070fc2ef217785cdbe5036d_oak-acorn-logo-2048.png" width="20" height="20"/> <a href="https://classroom.thenational.academy/subjects-by-key-stage/key-stage-2/subjects/computing">Oak National Academy</a><br/>
+                    </span>  
                 </div>
             </div>
     
@@ -107,7 +110,7 @@
                 <div class="profile-head">
                     <header style="color: teal; font-size: xx-large; font-weight:bold">{{Auth::user()->name}}</header>
                     <header> 
-                        <span>Primary TeDucator</span>
+                        <span style="color: gold; font-size: x-large">Primary TeDucator</span>
                     </header>
                     <br><br>
                     <p class="surveytitle">Take the Computing Curriculum Survey to get started:</p>
