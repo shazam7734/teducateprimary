@@ -142,7 +142,12 @@
             <div class="main">
                 <br><br>
                 <h1>Training Course: {{ $topic_name }}</h1><br>
-                <p>Welcome to your personalised training course! Please select your year group to get started:</p>
+                <p style="margin-right: 30px">Welcome to your personalised training course! Here you will find video tutorials, lesson plan instructions, and, 
+                    of course, interactive lesson plans that are geared for you and your students at your personalised training level 
+                    for this course. The difficulty level is set according to the number you gave this topic on the computing curriculum 
+                    survey. If you find that this level is not suitable, feel free to re-take the survey at any time to generate a new 
+                    training course!</p>
+                    <p style="font-weight: bold; font-size: x-large">Please select your year group to get started:</p>
             </div>
                 <div class="row">
                     <div class="column">
