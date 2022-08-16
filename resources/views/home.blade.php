@@ -356,7 +356,7 @@
                         <a class="twitter-timeline" data-width="470" data-height="600" href="https://twitter.com/SarahAz21203704?ref_src=twsrc%5Etfw">Tweet Your Experiences to TeDucate!</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     <br><br>
                     <h3>Share Your Experiences!</h3>
-                    <p>Use the <strong>#teducateprimary</strong> hashtag in your tweet to share your experiences with our community of TeDucators!</p>
+                    <p>Use the <strong>#teducateprimary</strong> hashtag in your tweet to share your experiences with our community of TeDucators! To ensure a healthy community practice is being maintainted, please allow 24 hours for your Tweet to be reviewed and made public by the development team. Thank You!</p>
                     <p><a href="https://twitter.com/login" style="color: rgb(183, 247, 255); font-weight: bold; margin-left: 160px; font-size: large; text-decoration: underline">Add A Tweet!</a></p>
                         <div class="taggbox" style="width:100%;height:100%; background-color:white" data-widget-id="104206" data-tags="false"></div><script src="https://widget.taggbox.com/embed-lite.min.js" type="text/javascript"></script>
                     <p style="text-align: right">via #taggbox</p>

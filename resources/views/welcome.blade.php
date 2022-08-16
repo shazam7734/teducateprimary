@@ -104,8 +104,8 @@
                 need to succeed. The TeDucation Community page is a Twitter account created by us for our fellow TeDucators to share your experiences while using our site. 
                 Within this page, you can post, comment, share and like posts made by your fellow TeDucators on lesson plans they've done, dusted and shared
                 with the TeDucation Community. You can see prime examples of how other teachers have implemented a computing lesson, with examples of students work
-                and any other tips and tricks they've shared. Feel free to add a Tweet of your own each time you complete a computing lesson! The more likes you 
-                get, the more prizes you win! 
+                and any other tips and tricks they've shared. Feel free to add a Tweet of your own each time you complete a computing lesson using the #teducateprimary 
+                hashtag. The more likes you get, the more prizes you win! 
 
             
             <div class="container" id="img4">
@@ -164,7 +164,7 @@
             <div class="container" id="img11">
                 <img src="https://cdn.iconscout.com/icon/free/png-256/feedback-chat-comment-discussion-message-complaint-bubble-2-5284.png" class="image" style="border-radius: 50%">
                 <div class="middle">
-                    <div class="text">Step 4: Leave feedback for each lesson for the application developer</div>
+                    <div class="text">Step 4: Leave feedback for the application developer</div>
                 </div>
             </div>
 
