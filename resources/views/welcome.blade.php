@@ -143,7 +143,7 @@
             <div class="container" id="img8">
                 <img src="https://cdn-icons-png.flaticon.com/512/295/295128.png" class="image">
                 <div class="middle">
-                    <div class="text">Step 1: <a href="http://127.0.0.1:8000/register">Register</a> <br> and <br> <a href="http://127.0.0.1:8000/login">Log in</a>!</div>
+                    <div class="text">Step 1: <a href="http://127.0.0.1:8000/register">Register</a> <br> and <br> <a href="http://127.0.0.1:8000/login">Log in</a> to take the curriculum survey and access your training course!</div>
                 </div>
             </div>
 
@@ -155,7 +155,7 @@
             </div>
 
             <div class="container" id="img10">
-                <img src="https://www.pngitem.com/pimgs/m/596-5965823_training-and-development-icon-clipart-png-download-training.png" class="image" style="border-radius: 50%">
+                <img src="https://i.pinimg.com/474x/72/ee/0a/72ee0ac1a8405fd42800bf7f8c5f82dd--business-icon-my-works.jpg" class="image" style="border-radius: 50%">
                 <div class="middle">
                     <div class="text">Step 3: Access generated training resources and complete lessons with students</div>
                 </div>

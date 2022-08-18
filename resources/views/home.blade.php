@@ -254,7 +254,7 @@
                         <div class="flex-container">
                             <div class="flex-child magenta" id="complete">
                                 <h4 class="toprow3"> You Made It! </h4>
-                                <p class="coursebody"> Congratulations on completing your training courses! Challenge yourself to further by taking the Key Stage 1 or Key Stage 2 Computing Quizes to earn your <br>Certificate of Completion!</p>
+                                <p class="coursebody" style="font-weight:bold"> Congratulations on completing your training courses! Challenge yourself further by taking the KS1 or KS2 Computing Quizes to earn your <br>Certificate of Completion!</p>
                                 <button class="course"
                                     onclick="window.location.href = '/ks1quiz';">
                                         KS1 Computing Quiz

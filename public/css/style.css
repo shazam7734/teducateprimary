@@ -275,21 +275,21 @@ html {
         #img10 {
             position: relative;
             right: -960px;
-            top: -70px;
+            top: -65px;
             width: 10%;        
         }
 
         #img11 {
             position: relative;
             right: -680px;
-            top: -20px;
+            top: -10px;
             width: 10%;        
         }
 
         #img12 {
             position: relative;
             right: -390px;
-            top: -380px;
+            top: -370px;
             width: 10%;         
         }
 
@@ -744,7 +744,7 @@ body {
 }
 
 #complete {
-    background-image: url("https://c8.alamy.com/zooms/9/1ab5b2ffa50f4d4b93a5a8986990226b/t67pbm.jpg"); 
+    background-image: url("https://media.istockphoto.com/vectors/celebration-modern-abstract-confetti-background-vector-id1196225354?k=20&m=1196225354&s=612x612&w=0&h=Jc9rLt6uaRMrzduQEIfXRbnRu7RoSeBn3G7ljbqGi5g="); 
     object-fit: cover
 }
 
