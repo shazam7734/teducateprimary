@@ -32,7 +32,7 @@ class ResourcesController extends Controller
             ->limit(13)
             ->get();
         
-        //Pulling data from the resources table based on the survey results above and saving in an array
+        //Pulling data from the resources table based on the survey results above and saving in an array (reference 8)
         $resources=arrray();
         foreach($survey as $surveys){
         $result = DB::table('surveys')

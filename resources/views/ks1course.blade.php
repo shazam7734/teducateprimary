@@ -18,7 +18,8 @@
         
         <script>
 
-            //This function will update the training level depending on how the user scored that topic on the curriculum survey [reference 4 & 5]
+            //This function will update the training level depending on how the user scored that 
+            //topic on the curriculum survey [reference 3 & 4]
             window.onload = function(){
                 //The $Score variabLe is already created in the survey controller
                 if ({{$Score}} >= 1 && {{$Score}} < 3) {
@@ -37,7 +38,9 @@
                 }
             }
             
-            //This function will create the dymanic training course depending on the survey score the user gave this topic and the year group the user clicks on from the dropdown menu
+            //This function will create the dymanic training course depending on the 
+            //survey score the user gave that topic and the year group the user clicks 
+            //on from the dropdown menu
             function get_Details_By_Year() {
                 year_value= document.getElementById("ks1group").value;
                 var tutorials = document.getElementById("tutorials");
@@ -50,13 +53,23 @@
                 tutorials.innerHTML = "Tutorials";
                 instructions.innerHTML="Instructions";
                 lesson_plan.innerHTML="Lesson Plan";
+                //Laravel method to pass the array stored in the resources 
+                //variable to this view template (Reference 6)
                 var resources = @json($resources);
+                //The resources table will have some null values depending on 
+                //the training level, so this statement will only display the 
+                //cells which are not empty
                 if (resources != null) {
                     for (var resource in resources[0]) {
+                        //comparing the user input value with the value stored in 
+                        //the resources database
                         if (resources[0][resource]["year"] == year_value) {
                         
                             if(resources[0][resource]["tutorial1"]!=""){
+                                //Create an element to start appending the training course 
+                                //links to, separated with a horizontal line "hr" (Reference )
                                 tutorials.appendChild(document.createElement("hr")) ;
+                                //Create a variable to start appending all the links for the training course
                                 var a = createLink("Tutorial1", resources[0][resource]["tutorial1"]);
                                 tutorials.appendChild(a);
                                 tutorials.appendChild(document.createElement("hr")) ;

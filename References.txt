@@ -2,7 +2,9 @@ Below are the references of some of the coding structure I used to create my app
 
 [1] https://bootsnipp.com/snippets/K0ZmK    (Profile page design)
 [2] https://sebhastian.com/html-hover-text/ (hover over text feature)
-[3] https://publish.twitter.com/# (embedded twitter feed)
-[4] https://community.x10hosting.com/threads/student-use-document-getelementbyid-innerhtml-with-if-else-statement.84815/
-[5] https://linuxhint.com/window-onload-event-in-javascript/#:~:text=JavaScript%20has%20a%20window%20onload,object%20is%20loaded%20in%20HTML.
-[6] https://laravel.com/docs/5.7/blade#displaying-data
+[3] https://community.x10hosting.com/threads/student-use-document-getelementbyid-innerhtml-with-if-else-statement.84815/
+[4] https://linuxhint.com/window-onload-event-in-javascript/#:~:text=JavaScript%20has%20a%20window%20onload,object%20is%20loaded%20in%20HTML.
+[5] https://laravel.com/docs/5.7/blade#displaying-data
+[6] https://5balloons.info/connecting-your-project-to-database-in-laravel/
+[7] https://medium.com/@ajtech.mubasheer/storing-and-retrieving-data-from-database-tables-using-eloquent-in-laravel-and-sending-to-views-de3a86b6b2a9
+[8] https://laravel.com/docs/9.x/queries#select-statements

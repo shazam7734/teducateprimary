@@ -30,6 +30,29 @@
     </head>
 
     <body>
+    
+      <!-- This extends the banner section with the logo and relavent tablinks -->
+      <div class="header">
+            <div class ="logo">
+                <a href="{{ url('/') }}" class="logo">
+                    <img src="https://i.ibb.co/HP9xhP8/logo-banner.jpg" width="90" height="50"> Empowering You
+                </a>
+            </div>
+            <div class="header-right" style="font-weight:bold; border: black">
+                <a href="http://127.0.0.1:8000/home">Profile - </a>
+                <a href="http://127.0.0.1:8000/#section3">Our Mission - </a>
+                <a href="http://127.0.0.1:8000/#section4">Why TeDucate - </a>
+                <a href="http://127.0.0.1:8000/#section5">Getting Started -</a>
+                <a href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                        document.getElementById('logout-form').submit();"> {{ __('Logout') }}</a>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                    @csrf
+                </form>
+                    
+
+            </div>
+        </div>
+
     <form action="/survey" onsubmit="return thank_you_function()" method="post">
     @csrf
         <h1>Computing Curriculum Survey</h1>
@@ -203,12 +226,16 @@
         <button class="submitbtn">Submit</button>
         <input class ="submitbtn" type="reset" name="reset" value="Reset">
         </form>
+    
+        <br><br><br><br><br>
+
     </body>
     <script>
     function thank_you_function(){
         alert("Thank you for your feedback.");
     }
     </script>
-    <br><br>
-</html>
+
+    
+
 

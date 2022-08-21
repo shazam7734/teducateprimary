@@ -67,6 +67,7 @@
     <div class="container emp-profile" style="border-width: 136px; border: solid grey; border-style: double;">
         <div class="row">
             <div class="col-md-4">
+                <!-- This form enables users to change their profile picture -->                
                 <form action="{{route('home')}}" method="POST" enctype="multipart/form-data">
                         @csrf
                     <div class="profile-img">
@@ -108,6 +109,7 @@
     
             <div class="col-md-6">
                 <div class="profile-head">
+                    <!-- This pulls the name of the user inputted in the database from registration (Reference 5) -->                
                     <header style="color: teal; font-size: xx-large; font-weight:bold">{{Auth::user()->name}}</header>
                     <header> 
                         <span style="color: gold; font-size: x-large">Primary TeDucator</span>
